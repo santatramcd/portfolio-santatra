@@ -1,9 +1,11 @@
 <template>
     <div>
-        <h1>about</h1>
+        <AboutHead/>
     </div>
 </template>
 <script setup>
+import AboutHead from '../About/AboutHead.vue';
+
 
 </script>
 <style scoped lang="scss">
