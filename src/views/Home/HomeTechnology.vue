@@ -69,6 +69,5 @@ img {
 }
 .image{
     height: 200px;
-    background: red;
 }
 </style>
