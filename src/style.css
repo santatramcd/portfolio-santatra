@@ -6,4 +6,5 @@ body{
     width: 100%;
     height: 100vh;
     background-color: var(--token-d06c6878-f8de-4d7e-a60a-d0bb19103013, #141414);
+    overflow: hidden;
 }
