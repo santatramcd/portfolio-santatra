@@ -1,12 +1,15 @@
 <template>
   <div>
     <HomeHead />
-    <HomeTech />
+    <HomeDiv data-aos="fade-up"/>
+    <HomeTech data-aos="fade-up"/>
   </div>
 </template>
 <script setup>
 import HomeHead from '../Home/HomeHead.vue'
 import HomeTech from '../Home/HomeTechnology.vue'
+import HomeDiv from '../Home/Homediv.vue/';
+
 AOS.init({
   offset: 400,
   duration: 1000,

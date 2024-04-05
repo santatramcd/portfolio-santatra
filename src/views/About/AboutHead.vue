@@ -1,10 +1,10 @@
 <template>
     <div>
-        <Workheader />
+        <h1>about</h1>
     </div>
 </template>
 <script setup>
-import Workheader from '../work/workheader.vue';
+
 </script>
 <style scoped lang="scss">
 

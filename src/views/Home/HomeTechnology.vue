@@ -1,6 +1,9 @@
 <template>
   <div>
     <div class="container">
+        <div>
+            <h1>Je suis passionné par la technologie</h1>
+        </div>
       <div class="row">
         <div class="col-md-4 mt-3"  v-for="(item, index) in data" :key="index">
           <!-- Contenu de la première colonne -->
@@ -13,7 +16,6 @@
             </div>
             <div class="colorname">
               <h3 class="title-card">{{ item.title }}</h3>
-              <p>{{ item.description }}</p>
             </div>
           </div>
         </div>
@@ -24,19 +26,16 @@
 <script setup>
 const data =[
     {
-        img : "https://rockresearch.com/wp-content/uploads/2017/11/event_technology.jpg",
-        title : 'Technology',
-        description : `the application of scientific knowledge for practical purposes, especially in industry and commerce. It encompasses a wide range of tools, systems, and methods used to solve problems, improve processes, and enhance human capabilities.`,
+        img : "https://ueuromed.org/sites/default/files/2020-04/cyber-securite.jpeg",
+        title : 'Cybersécurité',
     },
     {
-        img : "https://www.skillstork.org/blog/wp-content/uploads/2022/11/modern-education-Skillstork-1568x882.jpg",
-        title : 'Virtualization',
-        description : `the process of creating a virtual (rather than actual) version of something, such as an operating system, server, storage device, or network resource. This technology allows multiple virtual instances to run on a single physical machine, optimizing resource utilization, improving scalability, and enhancing flexibility in IT infrastructure management.`,
+        img : "https://intelligence-artificielle.com/wp-content/uploads/2022/04/Robot-IA-6.jpg",
+        title : 'Robotique'
     },
     {
         img : "https://www.globalfocusmagazine.com/wp-content/uploads/2020/02/Engaging_with_technology-scaled.jpg",
         title : 'Artificial Intelligence',
-        description : `human intelligence in machines, involving learning, reasoning, and self-correction. It enables machines to perform tasks like visual perception, speech recognition, decision-making, and language translation, traditionally requiring human intelligence.`,
     }
 ]
 </script>
@@ -65,12 +64,17 @@ img {
 }
 .colorname {
   color: $colorwhite;
-  padding: 20px;
+  padding: 20px 10px;
 }
 .image{
-    height: 200px;
+    height: 250px;
 }
-p{
-    text-align: justify;
+h1,
+h3{
+    font-size: 30px;
+    color: $colorwhite;
+}
+h1{
+    padding: 15px 0;
 }
 </style>

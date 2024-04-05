@@ -2,7 +2,7 @@
   <div>
     <div class="container mt-5">
       <h1>
-        AN{{ titleStyled }}
+        ANDRIANJAKA <br> {{ titleStyled }}
       </h1>
       <span class="span">Développeur Web#</span>
       <span class="span-hr"></span>
@@ -18,7 +18,7 @@ AOS.init({
 import { onMounted, ref } from "vue";
 // import Title from "@/components/Common/Title.vue";
 
-const titleStyled = ref("DRIANJAKA SANTATRA");
+const titleStyled = ref("SANTATRA");
 
 onMounted(() => {
   clearText();
@@ -40,7 +40,7 @@ function clearText() {
 }
 
 function writeText() {
-  const contenu = "DRIANJAKA SANTATRA";
+  const contenu = "SANTATRA";
   let index = 0;
   const ecriture = setInterval(() => {
     index++;

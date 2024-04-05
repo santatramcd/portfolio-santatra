@@ -1,8 +1,8 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid container">
-        <a class="nav-link navbar-brand" href="#">Navbar</a>
+        <a class="nav-link navbar-brand" href="#">SANTATRA®</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -12,7 +12,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span><i class="bi bi-list"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
@@ -59,5 +59,13 @@ nav{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  text-align: center;
+}
+.navbar-toggler-icon{
+  color: $colorwhite;
+}
+i {
+  color: $colorwhite;
+  font-size: 30px;
 }
 </style>
