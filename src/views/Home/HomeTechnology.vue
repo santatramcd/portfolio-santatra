@@ -26,17 +26,17 @@ const data =[
     {
         img : "https://rockresearch.com/wp-content/uploads/2017/11/event_technology.jpg",
         title : 'Technology',
-        description : 'Lorem ipsum dolor sit amet.',
+        description : `the application of scientific knowledge for practical purposes, especially in industry and commerce. It encompasses a wide range of tools, systems, and methods used to solve problems, improve processes, and enhance human capabilities.`,
     },
     {
         img : "https://www.skillstork.org/blog/wp-content/uploads/2022/11/modern-education-Skillstork-1568x882.jpg",
         title : 'Virtualization',
-        description : 'Lorem ipsum dolor sit amet.',
+        description : `the process of creating a virtual (rather than actual) version of something, such as an operating system, server, storage device, or network resource. This technology allows multiple virtual instances to run on a single physical machine, optimizing resource utilization, improving scalability, and enhancing flexibility in IT infrastructure management.`,
     },
     {
         img : "https://www.globalfocusmagazine.com/wp-content/uploads/2020/02/Engaging_with_technology-scaled.jpg",
         title : 'Artificial Intelligence',
-        description : 'Lorem ipsum dolor sit amet.',
+        description : `human intelligence in machines, involving learning, reasoning, and self-correction. It enables machines to perform tasks like visual perception, speech recognition, decision-making, and language translation, traditionally requiring human intelligence.`,
     }
 ]
 </script>
@@ -69,5 +69,8 @@ img {
 }
 .image{
     height: 200px;
+}
+p{
+    text-align: justify;
 }
 </style>
