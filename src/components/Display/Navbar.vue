@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid container">
-        <a class="nav-link navbar-brand" href="#">SANTATRA®</a>
+        <a class="nav-link navbar-brand" href="#" @click="home">SANTATRA®</a>
         <button
           class="navbar-toggler"
           type="button"
