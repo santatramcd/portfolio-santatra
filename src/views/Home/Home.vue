@@ -1,6 +1,7 @@
 <template>
   <div>
     <HomeHead />
+    <Homeslider/>
     <HomeDiv data-aos="fade-up"/>
     <HomeTech data-aos="fade-up"/>
   </div>
@@ -9,6 +10,7 @@
 import HomeHead from '../Home/HomeHead.vue'
 import HomeTech from '../Home/HomeTechnology.vue'
 import HomeDiv from '../Home/Homediv.vue/';
+import Homeslider from './Homeslider.vue';
 
 AOS.init({
   offset: 400,

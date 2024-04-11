@@ -1,6 +1,10 @@
 <template>
   <div>
     <div class="container">
+      <div class="mt-5 divis-contact">
+        <h1>Contacte-moi</h1>
+        <p>Je suis un développeur web spécialisé dans la création de sites dynamiques et conviviaux. À la recherche de nouveaux projets passionnants, je suis disponible pour des missions freelance ou des opportunités en entreprise. Contactez-moi pour discuter de vos besoins en développement web. Flexible pour travailler à distance ou en présentiel. Créons ensemble des solutions innovantes !</p>
+      </div>
       <div class="row">
         <div class="col-lg-6 mt-5">
           <div class="col-input">
@@ -158,5 +162,9 @@ i{
     padding: 12px;
     font-weight: 600;
     color: $colorwhite;
+}
+.divis-contact{
+  color: $colorwhite;
+  text-align: justify;
 }
 </style>

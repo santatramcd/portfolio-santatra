@@ -3,6 +3,7 @@
     <div class="division">
       <div class="container"></div>
     </div>
+    
   </div>
 </template>
 <script setup></script>
@@ -15,5 +16,14 @@
   background-position: center top;
   background-size: cover;
   min-height: 100vh;
+}
+.carousel-caption {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  // position: absolute;
+  background-color: #3333;
 }
 </style>
