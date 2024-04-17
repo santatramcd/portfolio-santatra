@@ -1,12 +1,18 @@
 <template>
   <div class="div">
-    <div class="division">
+    <div>
+      <h1>Mon Curriculum Vitae</h1>
+      <img :src="Cv" alt="" srcset="">
+    </div>
+    <!-- <div class="division">
       <div class="container"></div>
     </div>
-    
+     -->
   </div>
 </template>
-<script setup></script>
+<script setup>
+import Cv from '../../assets/image/cv.jpg'
+</script>
 <style scoped lang="scss">
 .division {
   width: 100%;
@@ -17,6 +23,10 @@
   background-size: cover;
   min-height: 100vh;
 }
+h1{
+  padding: 50px 20px;
+  color: #ffff;
+}
 .carousel-caption {
   display: flex !important;
   flex-direction: column;
@@ -25,5 +35,8 @@
   bottom: 0;
   // position: absolute;
   background-color: #3333;
+}
+img{
+  width: 100vw;
 }
 </style>
