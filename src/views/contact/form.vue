@@ -108,9 +108,9 @@ const sendMail = () => {
     emailjs.send("service_6zo1xro", "template_lza292p", params).then(
       function (response) {
         alert("Success! Your message has been sent.", response);
-        // fullName.value = "";
-        // email_id.value = "";
-        // message.value = "";
+        fullName.value = "";
+        email_id.value = "";
+        message.value = "";
       },
       function (error) {
         console.log("Error sending message:", error);
