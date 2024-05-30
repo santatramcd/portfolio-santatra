@@ -29,22 +29,22 @@ import robin from "../../assets/image/Capture d'écran 2024-05-30 094224.png";
 const data = [
   {
     img: artiist,
-    title: "Artiist",
+    title: "https://www.artiist.fr",
     link: "https://www.artiist.fr/",
   },
   {
     img: maki,
-    title: "Maki car rental",
+    title: "https://maki-car-rental-mada.netlify.app",
     link: "https://maki-car-rental-mada.netlify.app/",
   },
   {
     img: createak,
-    title: "Createak",
+    title: "https://createak.mu",
     link: "https://createak.mu/",
   },
   {
     img: robin,
-    title: "Robin Ruth",
+    title: "https://robinruth-thailand.com",
     link: "https://robinruth-thailand.com/",
   },
 ];
@@ -77,13 +77,14 @@ img {
 .image {
   height: 250px;
 }
-h1,
 h3 {
-  font-size: 30px;
+  font-size: 16px;
   color: $colorwhite;
 }
 h1 {
   padding: 15px 0;
+  font-size: 30px;
+  color: $colorwhite;
 }
 a {
   text-decoration: none;

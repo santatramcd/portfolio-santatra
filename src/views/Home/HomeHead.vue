@@ -63,6 +63,7 @@ h1 {
   color: $colorwhite;
   text-align: center;
   height: 25vw;
+  // text-shadow: 2px 5px 4px;
 }
 .span {
   // color: $colorwhite;
@@ -72,6 +73,7 @@ h1 {
   display: block;
   // background-color: red;
   font-weight: 600;
+
 }
 .span-hr {
   width: 173px;
@@ -79,5 +81,6 @@ h1 {
   background-color: #45f3ff;
   margin: auto;
   display: flex;
+
 }
 </style>

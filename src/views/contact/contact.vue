@@ -60,6 +60,9 @@ const sendMail = () => {
 $colorblack: var(--token-d06c6878-f8de-4d7e-a60a-d0bb19103013, #141414);
 $colorwhite: var(--token-585607e0-d916-446c-9a5c-fad6aacfe8e9, #ffffff);
 $param: 20px;
+h1{
+  font-size: 30px;
+}
 .col-input {
   display: flex;
   flex-direction: column;

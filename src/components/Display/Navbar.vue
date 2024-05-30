@@ -55,6 +55,10 @@ nav{
   color: $colorwhite;
   font-size: 1.5rem;
 }
+.nav-link:hover{
+  color: #45f3ff ;
+  text-shadow: 2px 5px 4px;
+}
 .navbar-nav{
   // background-color: red;
   width: 100%;

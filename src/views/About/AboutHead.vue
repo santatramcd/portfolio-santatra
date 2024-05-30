@@ -13,12 +13,13 @@
   </div>
 </template>
 <script setup>
-import Cv from '../../assets/image/cv.jpg'
+import Cv from '../../assets/image/cv-s.png'
 </script>
 <style scoped lang="scss">
 h1{
   padding: 50px 20px;
   color: #ffff;
+  font-size: 30px;
 }
 .carousel-caption {
   display: flex !important;
