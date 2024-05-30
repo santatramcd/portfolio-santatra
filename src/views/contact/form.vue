@@ -40,6 +40,47 @@
         </div>
       </form>
     </div>
+    <div class="container mt-5" style="color: #fff;">
+      <div class="row">
+        <div class="col-lg-4 mt-5">
+          <div class="div-icn-contact">
+            <div>
+              <span
+                ><i class="bi bi-telephone-inbound" style="font-size: 3rem"></i
+              ></span>
+            </div>
+            <div>
+              <h5>Whatsapp</h5>
+              <p>+261 32 46 658 49</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-5">
+          <div class="div-icn-contact">
+            <div>
+              <span
+                ><i class="bi bi-envelope-at" style="font-size: 3rem"></i
+              ></span>
+            </div>
+            <div>
+              <h5>Email</h5>
+              <p>Andrianjakasantatra22@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-5">
+          <div class="div-icn-contact">
+            <div>
+              <span><i class="bi bi-geo-alt" style="font-size: 3rem"></i></span>
+            </div>
+            <div>
+              <h5>Adresse</h5>
+              <p>Antananarivo, Madagascar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script setup>
@@ -200,6 +241,10 @@ h1 {
   border: none;
   background-color: #45f3ff;
   font-weight: bold;
+}
+.div-icn-contact{
+  padding: 15px;
+  border: 1px solid #fff;
 }
 @media only screen and (max-width: 940px) {
   .formulaire {
