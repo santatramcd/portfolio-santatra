@@ -2,7 +2,7 @@
   <div>
     <div class="container mt-5">
       <h1>
-        ANDRIANJAKA <br> {{ titleStyled }}
+        ANDRIANJAKA <br> <span class="span-name">{{ titleStyled }}</span> 
       </h1>
       <span class="span">Développeur Web#</span>
       <span class="span-hr"></span>
@@ -53,7 +53,7 @@ function writeText() {
 }
 </script>
 <style scoped lang="scss">
-$colorblack: var(--token-d06c6878-f8de-4d7e-a60a-d0bb19103013, #141414);
+$colorblack: var(--token-d06c6878-f8de-4d7e-a60a-d0bb19103013, #23242a);
 $colorwhite: var(--token-585607e0-d916-446c-9a5c-fad6aacfe8e9, #ffffff);
 $param: 20px;
 h1 {
@@ -64,10 +64,10 @@ h1 {
   text-align: center;
   height: 25vw;
 }
-
 .span {
-  color: $colorwhite;
+  // color: $colorwhite;
   font-size: 20px;
+  color: #45f3ff;
   text-align: center;
   display: block;
   // background-color: red;
@@ -76,7 +76,7 @@ h1 {
 .span-hr {
   width: 173px;
   height: 2px;
-  background-color: $colorwhite;
+  background-color: #45f3ff;
   margin: auto;
   display: flex;
 }

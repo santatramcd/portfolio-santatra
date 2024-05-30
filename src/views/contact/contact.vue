@@ -3,66 +3,27 @@
     <div class="container">
       <div class="mt-5 divis-contact">
         <h1>Contacte-moi</h1>
-        <p>Je suis un développeur web spécialisé dans la création de sites dynamiques et conviviaux. À la recherche de nouveaux projets passionnants, je suis disponible pour des missions freelance ou des opportunités en entreprise. Contactez-moi pour discuter de vos besoins en développement web. Flexible pour travailler à distance ou en présentiel. Créons ensemble des solutions innovantes !</p>
+        <p>
+          Je suis un développeur web spécialisé dans la création de sites
+          dynamiques et conviviaux. À la recherche de nouveaux projets
+          passionnants, je suis disponible pour des missions freelance ou des
+          opportunités en entreprise. Contactez-moi pour discuter de vos besoins
+          en développement web. Flexible pour travailler à distance ou en
+          présentiel. Créons ensemble des solutions innovantes !
+        </p>
       </div>
-      <div class="row">
-        <div class="col-lg-6 mt-5">
-          <div class="col-input">
-            <label>Votre nom</label>
-            <input
-              type="text"
-              v-model="fullName"
-              placeholder="Full Name"
-              required
-            />
-          </div>
-          <div class="col-input mt-2">
-            <label>Votre email</label>
-            <input
-              v-model="email_id"
-              type="email"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="col-input mt-2">
-            <label>Votre message</label>
-            <textarea
-              v-model="message"
-              placeholder="Message"
-              required
-            ></textarea>
-          </div>
-          <div class="col-input-btn">
-            <button @click="sendMail">Send</button>
-          </div>
-        </div>
-        <div class="col-lg-6 mt-5">
-            <div class="div2">
-            <div class="d-flex">
-              <div><span><i class="bi bi-person-fill"></i></span></div>
-              <div><p class="par-cont">ANDRIANJAKA SANTATRA MICHADO</p></div>
-            </div>
-          </div>
-          <div class="div2">
-            <div class="d-flex">
-              <div><span><i class="bi bi-telephone-inbound"></i></span></div>
-              <div><p class="par-cont">+261 32 46 658 49</p></div>
-            </div>
-          </div>
-          <div class="div2">
-            <div class="d-flex">
-              <div><span><i class="bi bi-envelope-open-fill"></i></span></div>
-              <div><p class="par-cont">Andrianjakasantatra22@gmail.com</p></div>
-            </div>
-          </div>
-        </div>
+      <div>
+        <Form />
       </div>
     </div>
+    <!--  -->
+
+    <!--  -->
   </div>
 </template>
 
 <script setup>
+import Form from "./form.vue";
 import { ref } from "vue";
 import emailjs from "emailjs-com";
 
@@ -141,29 +102,29 @@ button {
   margin: 20px auto;
   padding: 0;
 }
-span{
-    text-align: center;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: center;
-    border-radius: 50%;
-    color: $colorwhite;
-    background-color: $colorblack;
-    border: 1px solid $colorwhite;
+span {
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  border-radius: 50%;
+  color: $colorwhite;
+  background-color: $colorblack;
+  border: 1px solid $colorwhite;
 }
-i{
-    font-size: 20px;
+i {
+  font-size: 20px;
 }
-.par-cont{
-    padding: 12px;
-    font-weight: 600;
-    color: $colorwhite;
+.par-cont {
+  padding: 12px;
+  font-weight: 600;
+  color: $colorwhite;
 }
-.divis-contact{
+.divis-contact {
   color: $colorwhite;
   text-align: justify;
 }

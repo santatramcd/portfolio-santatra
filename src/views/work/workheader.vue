@@ -61,7 +61,7 @@ img {
   position: relative;
 }
 .divcard {
-  background-color: $colorblack;
+  background-color: #23242a;
   height: 100%;
 }
 .colorname {
