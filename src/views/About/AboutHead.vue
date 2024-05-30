@@ -1,7 +1,9 @@
 <template>
   <div class="div">
     <div>
+     <div class="container">
       <h1>Mon Curriculum Vitae</h1>
+     </div>
       <img  :src="Cv" alt="" srcset="">
       
     </div>
