@@ -49,6 +49,7 @@ $colorwhite: var(--token-585607e0-d916-446c-9a5c-fad6aacfe8e9, #ffffff);
 $param: 20px;
 nav{
   background-color: $colorblack;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .nav-link{
   color: $colorwhite;
@@ -59,7 +60,8 @@ nav{
   width: 100%;
   display: flex;
   justify-content: space-around;
-  text-align: center;
+  // text-align: center;
+  margin-left: 15px;
 }
 .navbar-toggler-icon{
   color: $colorwhite;
