@@ -25,6 +25,7 @@
 import artiist from "../../assets/image/artiist.png";
 import maki from "../../assets/image/maki.png";
 import createak from "../../assets/image/createak.png";
+import robin from "../../assets/image/Capture d'écran 2024-05-30 094224.png";
 const data = [
   {
     img: artiist,
@@ -40,6 +41,11 @@ const data = [
     img: createak,
     title: "Createak",
     link: "https://createak.mu/",
+  },
+  {
+    img: robin,
+    title: "Robin Ruth",
+    link: "https://robinruth-thailand.com/",
   },
 ];
 </script>
