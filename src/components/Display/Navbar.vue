@@ -11,8 +11,9 @@
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          @click="toggleButtonText"
         >
-          <span><i class="bi bi-list"></i></span>
+          <i :class="buttonIconClass"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
@@ -42,24 +43,36 @@ const work = () => {
 const contact = async () => {
   router.push("/contact");
 };
+
+import { ref } from 'vue';
+
+const buttonIconClass = ref('bi bi-list');
+
+function toggleButtonText() {
+  if (buttonIconClass.value === 'bi bi-list') {
+    buttonIconClass.value = 'bi bi-x';
+  } else {
+    buttonIconClass.value = 'bi bi-list';
+  }
+}
 </script>
 <style scoped lang="scss">
 $colorblack: var(--token-d06c6878-f8de-4d7e-a60a-d0bb19103013, #23242a);
 $colorwhite: var(--token-585607e0-d916-446c-9a5c-fad6aacfe8e9, #ffffff);
 $param: 20px;
-nav{
+nav {
   background-color: $colorblack;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.nav-link{
+.nav-link {
   color: $colorwhite;
   font-size: 1.5rem;
 }
-.nav-link:hover{
-  color: #45f3ff ;
+.nav-link:hover {
+  color: #45f3ff;
   text-shadow: 2px 5px 4px;
 }
-.navbar-nav{
+.navbar-nav {
   // background-color: red;
   width: 100%;
   display: flex;
@@ -67,7 +80,7 @@ nav{
   // text-align: center;
   margin-left: 15px;
 }
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   color: $colorwhite;
 }
 i {

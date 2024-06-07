@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="division">
     <div class="container mt-5">
       <h1>
         ANDRIANJAKA <br> <span class="span-name">{{ titleStyled }}</span> 
