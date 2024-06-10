@@ -40,7 +40,7 @@
         </div>
       </form>
     </div>
-    <div class="container mt-5" style="color: #fff;">
+    <div class="mt-5" style="color: #fff;">
       <div class="row">
         <div class="col-lg-4 mt-5">
           <div class="div-icn-contact">
