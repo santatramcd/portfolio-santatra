@@ -52,7 +52,7 @@ import { ref, computed } from "vue";
 import artiist from "../../assets/image/artiist.png";
 import maki from "../../assets/image/maki.png";
 import createak from "../../assets/image/createak.png";
-import robin from "../../assets/image/Capture d'écran 2024-05-30 094224.png";
+import robin from "../../assets/image/Capture.png";
 
 const data = [
   {
