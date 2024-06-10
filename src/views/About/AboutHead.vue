@@ -4,7 +4,7 @@
       <div class="container">
         <h1>Mon Curriculum Vitae</h1>
         <div>
-          <a href="src\assets\autres\Mon-cv-Santatra.pdf" class="a-down"
+          <a href="src/assets/autres/Mon-cv-Santatra.pdf" class="a-down"
             >Télécharger mon Cv</a
           >
         </div>
