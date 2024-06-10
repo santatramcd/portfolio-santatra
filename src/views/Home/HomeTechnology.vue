@@ -49,8 +49,14 @@ $param: 20px;
 }
 img {
   width: 100%;
-  height: 100%;
-  // background-color: aqua;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    /* border: 1px solid #ccc; */
+    background-color: blue;
+    height: 100%;
 }
 .row {
   align-items: stretch;
