@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <div class="divi">
       <form class="formulaire">
         <div class="divii">
