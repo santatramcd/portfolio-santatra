@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-md-4 mt-3"  v-for="(item, index) in data" :key="index">
           <!-- Contenu de la première colonne -->
-          <div class="divcard">
+          <div class="card divcard">
             <div class="image">
               <img
                 :src="item.img"
@@ -26,16 +26,16 @@
 <script setup>
 const data =[
     {
-        img : "https://ueuromed.org/sites/default/files/2020-04/cyber-securite.jpeg",
-        title : 'Cybersécurité',
+        img : "https://freenocode.org/wp-content/uploads/2020/10/WordPress-web.jpg",
+        title : 'WordPress',
     },
     {
-        img : "https://intelligence-artificielle.com/wp-content/uploads/2022/04/Robot-IA-6.jpg",
-        title : 'Robotique'
+        img : "https://miro.medium.com/v2/resize:fit:1000/1*2VUijywcHU32qLVrQ7BFbA.png",
+        title : 'VueJs 3'
     },
     {
-        img : "https://www.globalfocusmagazine.com/wp-content/uploads/2020/02/Engaging_with_technology-scaled.jpg",
-        title : 'Artificial Intelligence',
+        img : "https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png",
+        title : 'Bootstrap 5',
     }
 ]
 </script>
@@ -68,6 +68,11 @@ img {
 }
 .image{
     height: 250px;
+    // border-bottom-right-radius: calc(.25rem - 1px);
+    // width: 100%;
+    // max-width: 300px;
+    // height: auto;
+    // min-height: 250px;
 }
 h1,
 h3{
