@@ -127,8 +127,11 @@ ul {
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  transition: transform 0.2s ease-in-out 0.2s;
 }
-
+.divcard:hover{
+  transform: translateY(-5px);
+}
 .image img {
   max-width: 100%;
   height: auto;
