@@ -160,4 +160,11 @@ ul {
   opacity: 0;
   transform: translateY(30px);
 }
+@media (max-width: 470px){
+  .ul-list-proj li {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    gap: 15px;}
+}
 </style>

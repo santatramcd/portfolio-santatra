@@ -35,6 +35,4 @@ h1{
 img{
   width: 100vw;
 }
-
-
 </style>
