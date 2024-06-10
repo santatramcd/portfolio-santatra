@@ -17,9 +17,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#" @click="home">Home</a>
-            <a class="nav-link" href="#" @click="about">About</a>
-            <a class="nav-link" href="#" @click="work">Work</a>
+            <a class="nav-link" href="#" @click="home">Accueil</a>
+            <a class="nav-link" href="#" @click="about">Curriculum Vitae</a>
+            <a class="nav-link" href="#" @click="work">Portfolio</a>
             <a class="nav-link" href="#" @click="contact">Contact</a>
           </div>
         </div>
