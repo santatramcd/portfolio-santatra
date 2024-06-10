@@ -59,12 +59,13 @@ img {
 }
 .divcard {
   background-color: $colorblack;
-  border: 1px solid $colorwhite;
+  // border: 1px solid $colorwhite;
   height: 100%;
+  border: none;
 }
 .colorname {
   color: $colorwhite;
-  padding: 20px 10px;
+  padding: 20px 0px;
 }
 .image{
     height: 250px;

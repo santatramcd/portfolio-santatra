@@ -2,10 +2,35 @@
   <div>
     <div class="container">
       <div>
-        <h1>Les sites que j'ai déjà créés</h1>
+        <h1 style="color: #fff">Les sites que j'ai déjà créés par :</h1>
       </div>
-      <div class="row">
-        <div class="col-md-4 mt-3" v-for="(item, index) in data" :key="index">
+      <div>
+        <ul class="ul-list-proj">
+          <li>
+            <a href="#" @click.prevent="filterProjects('Tous les projets')"
+              >Tous les projets</a
+            >
+          </li>
+          <li>
+            <a href="#" @click.prevent="filterProjects('WordPress')"
+              >WordPress</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              @click.prevent="filterProjects('Vuejs 3 et Bootstrap 5')"
+              >Vuejs 3 et Bootstrap 5</a
+            >
+          </li>
+        </ul>
+      </div>
+      <transition-group name="list" tag="div" class="row">
+        <div
+          class="col-md-4 mt-3"
+          v-for="item in filteredData"
+          :key="item.title"
+        >
           <a :href="item.link">
             <div class="divcard">
               <div class="image">
@@ -17,76 +42,119 @@
             </div>
           </a>
         </div>
-      </div>
+      </transition-group>
     </div>
   </div>
 </template>
+
 <script setup>
+import { ref, computed } from "vue";
 import artiist from "../../assets/image/artiist.png";
 import maki from "../../assets/image/maki.png";
 import createak from "../../assets/image/createak.png";
 import robin from "../../assets/image/Capture d'écran 2024-05-30 094224.png";
+
 const data = [
   {
     img: artiist,
     title: "https://www.artiist.fr",
     link: "https://www.artiist.fr/",
-  },
-  {
-    img: maki,
-    title: "https://maki-car-rental-mada.netlify.app",
-    link: "https://maki-car-rental-mada.netlify.app/",
+    technology: "WordPress",
   },
   {
     img: createak,
     title: "https://createak.mu",
     link: "https://createak.mu/",
+    technology: "WordPress",
   },
   {
     img: robin,
     title: "https://robinruth-thailand.com",
     link: "https://robinruth-thailand.com/",
+    technology: "WordPress",
+  },
+  {
+    img: maki,
+    title: "https://maki-car-rental-mada.netlify.app",
+    link: "https://maki-car-rental-mada.netlify.app/",
+    technology: "Vuejs 3 et Bootstrap 5",
   },
 ];
+
+const selectedTechnology = ref("Tous les projets");
+
+const filteredData = computed(() => {
+  if (selectedTechnology.value === "Tous les projets") {
+    return data;
+  }
+  return data.filter((item) => item.technology === selectedTechnology.value);
+});
+
+function filterProjects(technology) {
+  selectedTechnology.value = technology;
+}
 </script>
-<style scoped lang="scss">
-$colorblack: var(--token-d06c6878-f8de-4d7e-a60a-d0bb19103013, #141414);
-$colorwhite: var(--token-585607e0-d916-446c-9a5c-fad6aacfe8e9, #ffffff);
-$param: 20px;
-.container {
-  margin-top: 50px;
-  // background: red;
-}
-img {
-  width: 100%;
-  height: 100%;
-  // background-color: aqua;
-}
-.row {
-  align-items: stretch;
-  position: relative;
-}
-.divcard {
-  background-color: #23242a;
-  height: 100%;
-}
-.colorname {
-  color: $colorwhite;
-  padding: 20px 0px;
-}
-.image {
-  height: 250px;
-}
-h3 {
-  font-size: 16px;
-  color: $colorwhite;
+
+<style scoped>
+.ul-list-proj li {
+  display: inline;
+  margin-right: 10px;
 }
 h1 {
-  padding: 15px 0;
+  padding: 50px 0px;
+  color: white;
   font-size: 30px;
-  color: $colorwhite;
 }
-a {
+ul {
+  padding: 0;
+  /* margin-top: 50px; */
+}
+.ul-list-proj a {
   text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 5px 10px;
+  background-color: #45f3ff;
+  border-radius: 10px;
+}
+
+.ul-list-proj a:hover {
+  text-decoration: underline;
+}
+
+.divcard {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-card {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.colorname {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Transition styles */
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
 }
 </style>
