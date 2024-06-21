@@ -16,9 +16,8 @@
   </div>
 </template>
 <script setup>
-import Cv from "../../assets/image/cv-s.png";
 import { ref } from 'vue';
-
+import Cv from "../../assets/image/cv-s.png";
 import cvURL from '../../assets/autres/cv-santatra.pdf';
 
 function downloadCV() {
