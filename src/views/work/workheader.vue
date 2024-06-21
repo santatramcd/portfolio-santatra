@@ -116,6 +116,7 @@ ul {
   padding: 5px 10px;
   background-color: #45f3ff;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .ul-list-proj a:hover {

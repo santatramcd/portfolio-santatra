@@ -57,5 +57,6 @@ img {
   font-weight: 500;
   padding: 5px 8px;
   display: inline-block;
+  cursor: pointer;
 }
 </style>
