@@ -124,19 +124,22 @@ ul {
   background-color: #111;
 }
 
-.divcard {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-  transition: transform 0.2s ease-in-out 0.2s;
+a{
+  color: #45f3ff;
 }
 .divcard:hover{
   transform: translateY(-5px);
 }
 .image img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    /* border: 1px solid #ccc; */
+    /* background-color: blue; */
+    height: 100%;
 }
 
 .title-card {
@@ -145,10 +148,10 @@ ul {
 }
 
 .colorname {
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9;
   padding: 10px;
   border-top: 1px solid #ddd;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px; */
 }
 
 /* Transition styles */
