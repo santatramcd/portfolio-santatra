@@ -4,9 +4,7 @@
       <div class="container">
         <h1>Mon Curriculum Vitae</h1>
         <div>
-          <a href="src/assets/autres/Mon-cv-Santatra.pdf" class="a-down"
-            >Télécharger mon Cv</a
-          >
+          <a @click="copierTexte" class="a-down">Copier mon adresse email</a>
         </div>
       </div>
       <img :src="Cv" alt="" srcset="" />
@@ -19,6 +17,18 @@
 </template>
 <script setup>
 import Cv from "../../assets/image/cv-s.png";
+import { ref } from 'vue';
+
+const copierTexte = () => {
+  const texteACopier = "andrianjakasantatra22@gmail.com";
+  const tempInput = document.createElement("input");
+  tempInput.value = texteACopier;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+  alert("Texte copié dans le presse-papiers : " + texteACopier);
+}
 </script>
 <style scoped lang="scss">
 h1 {

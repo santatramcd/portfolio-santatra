@@ -119,7 +119,8 @@ ul {
 }
 
 .ul-list-proj a:hover {
-  text-decoration: underline;
+  color: #fff;
+  background-color: #111;
 }
 
 .divcard {
