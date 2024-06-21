@@ -4,7 +4,7 @@
       <div class="container">
         <h1>Mon Curriculum Vitae</h1>
         <div>
-          <a @click="copierTexte" class="a-down">Copier mon adresse email</a>
+          <a @click="downloadCV" class="a-down">Telecharger mon CV</a>
         </div>
       </div>
       <img :src="Cv" alt="" srcset="" />
@@ -19,15 +19,15 @@
 import Cv from "../../assets/image/cv-s.png";
 import { ref } from 'vue';
 
-const copierTexte = () => {
-  const texteACopier = "andrianjakasantatra22@gmail.com";
-  const tempInput = document.createElement("input");
-  tempInput.value = texteACopier;
-  document.body.appendChild(tempInput);
-  tempInput.select();
-  document.execCommand("copy");
-  document.body.removeChild(tempInput);
-  alert("Texte copié dans le presse-papiers : " + texteACopier);
+import cvURL from '../../assets/autres/cv-santatra.pdf';
+
+function downloadCV() {
+  const link = document.createElement('a');
+  link.href = cvURL;
+  link.download = 'cv-santatra.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 </script>
 <style scoped lang="scss">
@@ -54,7 +54,7 @@ img {
   background-color: #45f3ff;
   color: black;
   margin-left: 20px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 5px 8px;
   display: inline-block;
 }

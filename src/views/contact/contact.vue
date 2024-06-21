@@ -13,6 +13,9 @@
         </p>
       </div>
       <div>
+        <a @click="copierTexte" class="a-down">Copier mon adresse email</a>
+      </div>
+      <div>
         <Form />
       </div>
     </div>
@@ -54,13 +57,23 @@ const sendMail = () => {
     );
   }
 };
+const copierTexte = () => {
+  const texteACopier = "andrianjakasantatra22@gmail.com";
+  const tempInput = document.createElement("input");
+  tempInput.value = texteACopier;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+  alert("Texte copié dans le presse-papiers : " + texteACopier);
+}
 </script>
 
 <style scoped lang="scss">
 $colorblack: var(--token-d06c6878-f8de-4d7e-a60a-d0bb19103013, #141414);
 $colorwhite: var(--token-585607e0-d916-446c-9a5c-fad6aacfe8e9, #ffffff);
 $param: 20px;
-h1{
+h1 {
   font-size: 30px;
 }
 .col-input {
@@ -130,5 +143,15 @@ i {
 .divis-contact {
   color: $colorwhite;
   text-align: justify;
+}
+.a-down {
+  text-decoration: none;
+  /* padding: 12px; */
+  background-color: #45f3ff;
+  color: black;
+  font-weight: 500;
+  padding: 5px 8px;
+  display: inline-block;
+  cursor: pointer;
 }
 </style>
