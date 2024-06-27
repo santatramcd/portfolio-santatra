@@ -61,7 +61,7 @@ import maki from "../../assets/image/maki.png";
 import createak from "../../assets/image/createak.png";
 import robin from "../../assets/image/Capture.png";
 import projet from "../../assets/image/react.png"
-
+import vueprojet from "../../assets/image/projet.png"
 const data = [
   {
     img: artiist,
@@ -85,6 +85,12 @@ const data = [
     img: maki,
     title: "https://maki-car-rental-mada.netlify.app",
     link: "https://maki-car-rental-mada.netlify.app/",
+    technology: "Vuejs 3 et Bootstrap 5",
+  },
+  {
+    img: vueprojet,
+    title: "https://pinkscrap2.netlify.app",
+    link: "https://pinkscrap2.netlify.app/",
     technology: "Vuejs 3 et Bootstrap 5",
   },
   {
