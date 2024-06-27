@@ -23,13 +23,20 @@
               >Vuejs 3 et Bootstrap 5</a
             >
           </li>
+          <li>
+            <a
+              href="#"
+              @click.prevent="filterProjects('React Js')"
+              >React Js</a
+            >
+          </li>
         </ul>
       </div>
       <transition-group name="list" tag="div" class="row">
         <div
           class="col-md-4 mt-3"
           v-for="item in filteredData"
-          :key="item.title"
+          :key="item.link"
         >
           <a :href="item.link">
             <div class="divcard">
@@ -53,6 +60,7 @@ import artiist from "../../assets/image/artiist.png";
 import maki from "../../assets/image/maki.png";
 import createak from "../../assets/image/createak.png";
 import robin from "../../assets/image/Capture.png";
+import projet from "../../assets/image/react.png"
 
 const data = [
   {
@@ -78,6 +86,12 @@ const data = [
     title: "https://maki-car-rental-mada.netlify.app",
     link: "https://maki-car-rental-mada.netlify.app/",
     technology: "Vuejs 3 et Bootstrap 5",
+  },
+  {
+    img: projet,
+    title: "https://projet-santatra.netlify.app",
+    link: "https://projet-santatra.netlify.app/",
+    technology: "React Js",
   },
 ];
 
@@ -124,22 +138,19 @@ ul {
   background-color: #111;
 }
 
-a{
+a {
   color: #45f3ff;
 }
-.divcard:hover{
+.divcard:hover {
   transform: translateY(-5px);
 }
 .image img {
   width: 100%;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-    /* border: 1px solid #ccc; */
-    /* background-color: blue; */
-    height: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  height: 100%;
 }
 
 .title-card {
@@ -172,7 +183,7 @@ a{
     margin-right: 0;
     gap: 15px;
   }
-  .ul-list-proj li{
+  .ul-list-proj li {
     margin-right: 0;
   }
 }

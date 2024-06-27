@@ -9,10 +9,6 @@
       </div>
       <img :src="Cv" alt="" srcset="" />
     </div>
-    <!-- <div class="division">
-      <div class="container"></div>
-    </div>
-     -->
   </div>
 </template>
 <script setup>
@@ -41,15 +37,12 @@ h1 {
   justify-content: center;
   align-items: center;
   bottom: 0;
-  // position: absolute;
-  // background-color: #3333;
 }
 img {
   width: 100vw;
 }
 .a-down {
   text-decoration: none;
-  /* padding: 12px; */
   background-color: #45f3ff;
   color: black;
   margin-left: 20px;
