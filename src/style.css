@@ -7,4 +7,5 @@ body{
     height: 100vh;
     background-color: #23242a;
     overflow-x: hidden;
+    font-family: monospace;
 }

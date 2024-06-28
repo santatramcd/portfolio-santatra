@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-5">
           <div>
             <img
               src="https://f.hellowork.com/blogdumoderateur/2023/09/AI-outils-code-developpeurs.jpg"
@@ -10,7 +10,7 @@
             />
           </div>
         </div>
-        <div class="col-lg-6 div">
+        <div class="col-lg-6 div mt-5">
           <div>
             <h1>Je suis un développeur web</h1>
             <p>
@@ -31,8 +31,12 @@ $param: 20px;
   margin-top: 80px;
 }
 img {
-  width: 100%;
+  width: 90%;
   height: auto;
+  transform: rotate(-20deg);
+  border-radius: 50px;
+  opacity: 0.6;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.66);
 }
 .div {
   display: flex;

@@ -45,7 +45,7 @@ AOS.init({
 }
 .container-div {
   margin-top: 100px;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 .div-a a{
   padding: 12px 25px;
@@ -88,7 +88,7 @@ img {
   aspect-ratio: 1 / 1;
   /* border: 1px solid #ccc; */
   // background-color: blue;
-  height: 100%;
+  height: 70%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.337);
   border-radius: 20px;
 }
