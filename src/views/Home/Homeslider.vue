@@ -4,9 +4,7 @@
       <div class="row">
         <div class="col-lg-6 card">
           <div class="div-show">
-            <h1 class="title-show">
-              Présentez tous les projets
-            </h1>
+            <h1 class="title-show">Présentez tous les projets</h1>
             <div class="div-a"><a href="#" @click="work">View pages ⇨</a></div>
           </div>
         </div>
@@ -43,14 +41,14 @@ AOS.init({
 <style scoped lang="scss">
 .card {
   background-color: #23242a !important;
-  border: none!important;
+  border: none !important;
   margin-top: 50px;
 }
 .container-div {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.div-a a{
+.div-a a {
   padding: 12px 25px;
   background-color: #45f3ff;
   // background-color: #23242a;
@@ -58,21 +56,21 @@ AOS.init({
   color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.733);
   text-decoration: none;
-
 }
-.title-show{
+.title-show {
   text-transform: uppercase;
   max-width: 65%;
   font-weight: bolder;
+  line-height: inherit;
 }
-.div-show{
-    color: #fff;
-    // background-color: red;
-    min-height: 100%;
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
-    justify-content: center;
+.div-show {
+  color: #fff;
+  // background-color: red;
+  min-height: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
 }
 .div-rel {
   min-height: 500px;
@@ -108,5 +106,10 @@ img {
   position: absolute;
   top: 50px;
   left: -120px;
+}
+@media only screen and (max-width: 500px) {
+  .title-show {
+    max-width: 100%;
+  }
 }
 </style>
