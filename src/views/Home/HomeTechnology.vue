@@ -86,7 +86,7 @@ h1 {
     text-align: center;
   }
 }
-@media only screen and (max-width: 416px) {
+@media only screen and (max-width: 500px) {
   .div-im-3,
   .div-im-2,
   .div-im-1 {
