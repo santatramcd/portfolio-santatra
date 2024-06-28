@@ -5,14 +5,14 @@
         <h1>Vitrine de projets</h1>
       </div>
       <div>
-        <div class="row div-row">
-          <div class="col-lg-4 p-0 mt-5" data-aos="fade-up" data-aos-delay="0">
+        <div class="row div-row p-0 m-0">
+          <div class="col-lg-4 p-0 m-0 mt-5" data-aos="fade-up" data-aos-delay="0">
             <div class="div-im-1">
               <img src="../../assets/image/artiist.png" alt="" />
             </div>
           </div>
           <div
-            class="col-lg-4 p-0 mt-5 div-2-col"
+            class="col-lg-4 p-0 m-0 mt-5 div-2-col"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -21,7 +21,7 @@
             </div>
           </div>
           <div
-            class="col-lg-4 p-0 mt-5 div-col-resp"
+            class="col-lg-4 p-0 m-0 mt-5 div-col-resp"
             data-aos="fade-up"
             data-aos-delay="400"
           >
@@ -39,7 +39,6 @@
 .div-cont {
   margin-top: 150px;
   color: #fff;
-  // background: red;
   width: 100%;
   margin-left: 100px;
 }
@@ -49,6 +48,7 @@ img {
   height: auto;
   object-fit: cover;
   aspect-ratio: 1 / 1;
+  margin: 0;
   height: 100%;
   box-shadow: 0 2px 20px rgba(139, 130, 130, 0.08);
 }

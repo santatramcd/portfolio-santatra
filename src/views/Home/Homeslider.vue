@@ -62,7 +62,7 @@ AOS.init({
 }
 .title-show{
   text-transform: uppercase;
-  max-width: 80%;
+  max-width: 65%;
   font-weight: bolder;
 }
 .div-show{
@@ -109,5 +109,4 @@ img {
   top: 50px;
   left: -120px;
 }
-
 </style>
