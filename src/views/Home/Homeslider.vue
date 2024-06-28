@@ -7,7 +7,7 @@
             <h1 class="title-show">
               Afficher tous les projets
             </h1>
-            <div class="div-a"><a href="/work">Click me -></a></div>
+            <div class="div-a"><a href="#" @click="work">Click me -></a></div>
           </div>
         </div>
         <div class="col-lg-6 card">
@@ -29,8 +29,11 @@
 </template>
 
 <script setup>
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import { useRouter } from "vue-router";
+const router = useRouter();
+const work = () => {
+  router.push("/work");
+};
 
 AOS.init({
   offset: 400,
