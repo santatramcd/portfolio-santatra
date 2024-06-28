@@ -58,7 +58,6 @@ $colorwhite: var(--token-585607e0-d916-446c-9a5c-fad6aacfe8e9, #ffffff);
 $param: 20px;
 h1 {
   font-size: 10vw;
-  font-family: monospace;
   font-weight: bolder;
   color: $colorwhite;
   text-align: center;

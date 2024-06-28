@@ -52,8 +52,10 @@ AOS.init({
 }
 .div-a a{
   padding: 12px 25px;
-  background-color: #23242a;
-  color: #fff;
+  background-color: #45f3ff;
+  // background-color: #23242a;
+  font-weight: bolder;
+  color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.733);
   text-decoration: none;
 
