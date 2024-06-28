@@ -5,7 +5,7 @@
         <div class="col-lg-6">
           <div>
             <img
-              src="https://www.letecode.com/storage/articles/June2021/I1PF2FjDhjEygfb5CM6d.jpeg"
+              src="https://f.hellowork.com/blogdumoderateur/2023/09/AI-outils-code-developpeurs.jpg"
               alt="image"
             />
           </div>

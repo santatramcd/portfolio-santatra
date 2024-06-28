@@ -2,7 +2,7 @@
   <div>
     <HomeHead />
     <Homeslider/>
-    <HomeDiv/>
+    <HomeDiv data-aos="fade-up"/>
     <HomeTech data-aos="fade-up"/>
   </div>
 </template>
