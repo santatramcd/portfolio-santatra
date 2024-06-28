@@ -133,7 +133,7 @@ ul {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  padding: 5px 10px;
+  padding: 10px 15px;
   background-color: #45f3ff;
   border-radius: 10px;
   cursor: pointer;
@@ -151,7 +151,7 @@ a {
   transform: translateY(-5px);
 }
 .image{
-  height: 250px;
+  height: 300px;
 }
 .image img {
   width: 100%;
