@@ -24,11 +24,7 @@
             >
           </li>
           <li>
-            <a
-              href="#"
-              @click.prevent="filterProjects('React Js')"
-              >React Js</a
-            >
+            <a href="#" @click.prevent="filterProjects('React Js')">React Js</a>
           </li>
         </ul>
       </div>
@@ -60,8 +56,8 @@ import artiist from "../../assets/image/artiist.png";
 import maki from "../../assets/image/maki.png";
 import createak from "../../assets/image/createak.png";
 import robin from "../../assets/image/Capture.png";
-import projet from "../../assets/image/react.png"
-import vueprojet from "../../assets/image/projet.png"
+import projet from "../../assets/image/react.png";
+import vueprojet from "../../assets/image/projet.png";
 const data = [
   {
     img: artiist,
@@ -145,12 +141,25 @@ ul {
 }
 
 a {
-  color: #45f3ff;
+  color: #fff;
+  text-decoration: none;
+}
+.divcard {
+  will-change: transform;
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.2, 1, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.2, 1, 0.2, 1);
+  -o-transition: transform 0.7s cubic-bezier(0.2, 1, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.2, 1, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.2, 1, 0.2, 1),
+    -webkit-transform 0.7s cubic-bezier(0.2, 1, 0.2, 1);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 .divcard:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
-.image{
+.image {
   height: 300px;
 }
 .image img {
@@ -185,7 +194,7 @@ a {
   opacity: 0;
   transform: translateY(30px);
 }
-@media (max-width: 470px){
+@media (max-width: 470px) {
   .ul-list-proj {
     display: flex;
     flex-wrap: wrap;

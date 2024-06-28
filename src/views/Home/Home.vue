@@ -3,7 +3,7 @@
     <HomeHead />
     <Homeslider/>
     <HomeDiv data-aos="fade-up"/>
-    <HomeTech data-aos="fade-up"/>
+    <HomeTech/>
   </div>
 </template>
 <script setup>
