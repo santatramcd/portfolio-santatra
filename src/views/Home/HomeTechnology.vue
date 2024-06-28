@@ -40,7 +40,7 @@
   margin-top: 150px;
   color: #fff;
   width: 100%;
-  margin-left: 100px;
+  // margin-left: 100px;
 }
 img {
   width: 100%;
@@ -79,9 +79,6 @@ h1 {
   height: 400px;
 }
 @media only screen and (max-width: 988px) {
-  .div-cont {
-    margin-left: 0px;
-  }
   h1 {
     text-align: center;
   }
