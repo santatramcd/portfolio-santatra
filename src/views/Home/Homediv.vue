@@ -5,16 +5,16 @@
         <div class="col-lg-6 mt-5">
           <div>
             <img
-              src="https://f.hellowork.com/blogdumoderateur/2023/09/AI-outils-code-developpeurs.jpg"
+              src="../../assets/image/responsive.png"
               alt="image"
             />
           </div>
         </div>
         <div class="col-lg-6 div mt-5">
           <div>
-            <h1>Je suis un développeur web</h1>
+            <h1>Entièrement réactif et prêt</h1>
             <p>
-                Spécialisé dans la conception, le développement et la maintenance de sites web et d'applications web. Fortes compétences dans les langages de programmation ainsi que dans l'utilisation de frameworks modernes. Capacité démontrée à travailler efficacement en équipe et à livrer des projets de haute qualité dans les délais impartis.
+              Je suis spécialisé dans le responsive design, sur différentes sortes de plateformes : Ordinateur, téléphone, tablette. Chaque élément élaboré sera à 100% réactif et compatible.
             </p>
           </div>
         </div>
@@ -33,10 +33,10 @@ $param: 20px;
 img {
   width: 90%;
   height: auto;
-  transform: rotate(-20deg);
-  border-radius: 50px;
-  opacity: 0.6;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.66);
+  // transform: rotate(-10deg);
+  // border-radius: 50px;
+  // opacity: 0.6;
+  // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.66);
 }
 .div {
   display: flex;
@@ -51,5 +51,6 @@ h1 {
   font-size: 30px;
   color: $colorwhite;
   padding: 10px 0;
+  text-transform: uppercase;
 }
 </style>

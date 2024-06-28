@@ -5,9 +5,9 @@
         <div class="col-lg-6 card">
           <div class="div-show">
             <h1 class="title-show">
-              Afficher tous les projets
+              Présentez tous les projets
             </h1>
-            <div class="div-a"><a href="#" @click="work">Click me ⇨</a></div>
+            <div class="div-a"><a href="#" @click="work">View pages ⇨</a></div>
           </div>
         </div>
         <div class="col-lg-6 card">
