@@ -150,6 +150,9 @@ a {
 .divcard:hover {
   transform: translateY(-5px);
 }
+.image{
+  height: 250px;
+}
 .image img {
   width: 100%;
   max-width: 100%;
