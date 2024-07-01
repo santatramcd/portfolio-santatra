@@ -26,7 +26,7 @@
             data-aos-delay="400"
           >
             <div class="div-im-3">
-              <img src="../../assets/image/react.png" alt="" />
+              <img src="../../assets/image/site-web.png" alt="" />
             </div>
           </div>
         </div>

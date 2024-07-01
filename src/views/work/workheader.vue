@@ -58,7 +58,15 @@ import createak from "../../assets/image/createak.png";
 import robin from "../../assets/image/Capture.png";
 import projet from "../../assets/image/react.png";
 import vueprojet from "../../assets/image/projet.png";
+import Monsite from "../../assets/image/site-web.png";
+
 const data = [
+  {
+    img: Monsite,
+    title: "http://santatra-michado.com",
+    link: "http://santatra-michado.com/",
+    technology: "WordPress",
+  },
   {
     img: artiist,
     title: "https://www.artiist.fr",
