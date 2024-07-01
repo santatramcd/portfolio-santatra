@@ -84,16 +84,21 @@ h1 {
   }
 }
 @media only screen and (max-width: 500px) {
-  .div-im-3,
-  .div-im-2,
-  .div-im-1 {
-    width: 70%;
-    height: 250px;
-  }
-  .div-col-resp {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
+  // .div-im-3,
+  // .div-im-2,
+  // .div-im-1 {
+  //   width: 70%;
+  //   height: 250px;
+  // }
+  // .div-col-resp {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: flex-end;
+  // }
+  .div-im-2 {
+  // background-color: rgb(185, 80, 178);
+  width: 100%;
+  height: auto;
+}
 }
 </style>
