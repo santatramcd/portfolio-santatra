@@ -40,7 +40,7 @@
         </div>
       </form>
     </div>
-    <div class="mt-5" style="color: #fff;">
+    <div class="mt-5" style="color: #fff">
       <div class="row">
         <div class="col-lg-4 mt-5">
           <div class="div-icn-contact">
@@ -190,9 +190,12 @@ const sendMail = () => {
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -23px;
+  // margin-top: -23px;
   position: relative;
   z-index: 100;
+
+  margin-top: 2px;
+  padding-top: 29px;
 }
 
 .input {
@@ -242,7 +245,7 @@ h1 {
   background-color: #45f3ff;
   font-weight: bold;
 }
-.div-icn-contact{
+.div-icn-contact {
   padding: 15px;
   border: 1px solid #fff;
 }

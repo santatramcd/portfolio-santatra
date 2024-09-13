@@ -8,7 +8,7 @@
         <div class="row div-row p-0 m-0">
           <div class="col-lg-4 p-0 m-0 mt-5" data-aos="fade-up" data-aos-delay="0">
             <div class="div-im-1">
-              <img src="../../assets/image/artiist.png" alt="" />
+              <img src="../../assets/image/santatramichado.png" alt="" />
             </div>
           </div>
           <div
@@ -17,7 +17,7 @@
             data-aos-delay="200"
           >
             <div class="div-im-2">
-              <img src="../../assets/image/projet.png" alt="" />
+              <img src="../../assets/image/artiist.png" alt="" />
             </div>
           </div>
           <div
@@ -26,7 +26,7 @@
             data-aos-delay="400"
           >
             <div class="div-im-3">
-              <img src="../../assets/image/site-web.png" alt="" />
+              <img src="../../assets/image/mda.png" alt="" />
             </div>
           </div>
         </div>
