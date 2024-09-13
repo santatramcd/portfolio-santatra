@@ -2,7 +2,8 @@
   <div class="division">
     <div class="container mt-5">
       <h1>
-        ANDRIANJAKA <br> <span class="span-name">{{ titleStyled }}</span> 
+        ANDRIANJAKA <br />
+        <span class="span-name">{{ titleStyled }}</span>
       </h1>
       <span class="span">Développeur Web#</span>
       <span class="span-hr"></span>
@@ -56,6 +57,17 @@ function writeText() {
 $colorblack: var(--token-d06c6878-f8de-4d7e-a60a-d0bb19103013, #23242a);
 $colorwhite: var(--token-585607e0-d916-446c-9a5c-fad6aacfe8e9, #ffffff);
 $param: 20px;
+.division {
+  width: 100%;
+    padding: 80px 0;
+    background: url('../../../public/photos.JPG');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    // min-height: 100vh;
+    min-height: auto;
+
+}
 h1 {
   font-size: 10vw;
   font-weight: bolder;
@@ -72,7 +84,6 @@ h1 {
   display: block;
   // background-color: red;
   font-weight: 600;
-
 }
 .span-hr {
   width: 173px;
@@ -80,6 +91,5 @@ h1 {
   background-color: #45f3ff;
   margin: auto;
   display: flex;
-
 }
 </style>

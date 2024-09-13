@@ -58,13 +58,20 @@ import createak from "../../assets/image/createak.png";
 import robin from "../../assets/image/Capture.png";
 import projet from "../../assets/image/react.png";
 import vueprojet from "../../assets/image/projet.png";
-import Monsite from "../../assets/image/site-web.png";
+import Monsite from "../../assets/image/santatramichado.png";
+import Mda from "../../assets/image/mda.png";
 
 const data = [
   {
     img: Monsite,
-    title: "http://santatra-michado.com",
-    link: "http://santatra-michado.com/",
+    title: "https://santatra-michado.com",
+    link: "https://santatra-michado.com",
+    technology: "WordPress",
+  },
+  {
+    img: Mda,
+    title: "https://mada-digital-agency.com",
+    link: "https://mada-digital-agency.com",
     technology: "WordPress",
   },
   {
