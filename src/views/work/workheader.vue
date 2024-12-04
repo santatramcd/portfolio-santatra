@@ -26,6 +26,12 @@
           <li>
             <a href="#" @click.prevent="filterProjects('React Js')">React Js</a>
           </li>
+          <li>
+            <a href="#" @click.prevent="filterProjects('Application')">Application</a>
+          </li>
+          <li>
+            <a href="#" @click.prevent="filterProjects('grav')">Grav</a>
+          </li>
         </ul>
       </div>
       <transition-group name="list" tag="div" class="row">
@@ -60,6 +66,10 @@ import projet from "../../assets/image/react.png";
 import vueprojet from "../../assets/image/projet.png";
 import Monsite from "../../assets/image/santatramichado.png";
 import Mda from "../../assets/image/mda.png";
+import Lios from "../../assets/image/lios-collection.png";
+import Kcal from "../../assets/image/calcul-kcal.png";
+
+
 
 const data = [
   {
@@ -109,6 +119,18 @@ const data = [
     title: "https://projet-santatra.netlify.app",
     link: "https://projet-santatra.netlify.app/",
     technology: "React Js",
+  },
+  {
+    img: Kcal,
+    title: "Calculateur-de-calories",
+    link: "https://santatramcd.github.io/calculateur-de-calories/",
+    technology: "Application",
+  },
+  {
+    img: Lios,
+    title: "https://lios-collection.mu",
+    link: "https://lios-collection.mu/",
+    technology: "grav",
   },
 ];
 
