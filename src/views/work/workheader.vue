@@ -68,7 +68,7 @@ import Monsite from "../../assets/image/santatramichado.png";
 import Mda from "../../assets/image/mda.png";
 import Lios from "../../assets/image/lios-collection.png";
 import Kcal from "../../assets/image/calcul-kcal.png";
-
+import ReactJs from "../../assets/image/react-vercel.png"
 
 
 const data = [
@@ -118,6 +118,12 @@ const data = [
     img: projet,
     title: "https://projet-santatra.netlify.app",
     link: "https://projet-santatra.netlify.app/",
+    technology: "React Js",
+  },
+  {
+    img: ReactJs,
+    title: "https://projet-react-js-pi.vercel.app",
+    link: "https://projet-react-js-pi.vercel.app/",
     technology: "React Js",
   },
   {
