@@ -69,6 +69,7 @@ import Mda from "../../assets/image/mda.png";
 import Lios from "../../assets/image/lios-collection.png";
 import Kcal from "../../assets/image/calcul-kcal.png";
 import ReactJs from "../../assets/image/react-vercel.png"
+import eva from "../../assets/image/eva-car.png"
 
 
 const data = [
@@ -106,6 +107,12 @@ const data = [
     img: maki,
     title: "https://maki-car-rental-mada.netlify.app",
     link: "https://maki-car-rental-mada.netlify.app/",
+    technology: "Vuejs 3 et Bootstrap 5",
+  },
+  {
+    img: eva,
+    title: "https://eva-car-rental.vercel.app",
+    link: "https://eva-car-rental.vercel.app/",
     technology: "Vuejs 3 et Bootstrap 5",
   },
   {
