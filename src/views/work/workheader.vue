@@ -30,7 +30,7 @@
             <a href="#" @click.prevent="filterProjects('Application')">Application</a>
           </li>
           <li>
-            <a href="#" @click.prevent="filterProjects('grav')">Grav</a>
+            <a href="#" @click.prevent="filterProjects('grav')">Grav Cms</a>
           </li>
         </ul>
       </div>
