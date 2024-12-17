@@ -19,8 +19,8 @@
           <li>
             <a
               href="#"
-              @click.prevent="filterProjects('Vuejs 3 et Bootstrap 5')"
-              >Vuejs 3 et Bootstrap 5</a
+              @click.prevent="filterProjects('Vuejs 3')"
+              >Vuejs 3</a
             >
           </li>
           <li>
@@ -107,19 +107,19 @@ const data = [
     img: maki,
     title: "https://maki-car-rental-mada.netlify.app",
     link: "https://maki-car-rental-mada.netlify.app/",
-    technology: "Vuejs 3 et Bootstrap 5",
+    technology: "Vuejs 3",
   },
   {
     img: eva,
     title: "https://eva-car-rental.vercel.app",
     link: "https://eva-car-rental.vercel.app/",
-    technology: "Vuejs 3 et Bootstrap 5",
+    technology: "Vuejs 3",
   },
   {
     img: vueprojet,
     title: "https://pinkscrap2.netlify.app",
     link: "https://pinkscrap2.netlify.app/",
-    technology: "Vuejs 3 et Bootstrap 5",
+    technology: "Vuejs 3",
   },
   {
     img: projet,
