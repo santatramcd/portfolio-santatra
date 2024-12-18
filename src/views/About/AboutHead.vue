@@ -22,7 +22,7 @@
                     <ul>
                       <li>
                         <i class="bi bi-chevron-right"></i>
-                        <strong>Birthday:</strong> <span>May 1999</span>
+                        <strong>Birthday:</strong> <span>Mars 1999</span>
                       </li>
                       <li>
                         <i class="bi bi-chevron-right"></i>
