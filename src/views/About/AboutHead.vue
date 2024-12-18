@@ -74,8 +74,6 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
-import Cv from "../../assets/image/cv-s.png";
 import cvURL from "../../assets/autres/cv-santatra.pdf";
 import Profil from "../../assets/image/portrait.jpg";
 
