@@ -1,11 +1,11 @@
 <template>
   <div class="div">
     <div>
-      <div class="container">
+      <!-- <div class="container">
         <h1>Mon Curriculum Vitae</h1>
-      </div>
+      </div> -->
       <!-- <img :src="Cv" alt="" srcset="" /> -->
-      <div>
+      <div class="mt-5">
         <section id="about" class="about section">
           <div class="container">
             <div class="row gy-4 justify-content-center">
