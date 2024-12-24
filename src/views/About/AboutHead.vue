@@ -62,9 +62,9 @@
                 <p class="py-3">
                   Vous êtes étudiant, dirigez une école, une université, un centre de formation, un centre de fitness, un hôtel, une entreprise de location de voitures, une société de bâtiment, ou autre ? Vous avez besoin d’un site web pour représenter votre activité ou toucher un plus grand public ? Je suis là pour vous aider ! Que vous ayez besoin d’une présence en ligne professionnelle, d’un site fonctionnel et performant, ou d’une plateforme sur mesure, je m’engage à fournir un site de qualité, optimisé pour l’expérience utilisateur et le référencement.
                 </p>
-                <div>
+                <!-- <div>
                   <a @click="downloadCV" class="a-down">Telecharger mon CV</a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -74,17 +74,17 @@
   </div>
 </template>
 <script setup>
-import cvURL from "../../assets/autres/cv-santatra.pdf";
+// import cvURL from "../../assets/autres/cv-santatra.pdf";
 import Profil from "../../assets/image/portrait.jpg";
 
-function downloadCV() {
-  const link = document.createElement("a");
-  link.href = cvURL;
-  link.download = "cv-santatra.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
+// function downloadCV() {
+//   const link = document.createElement("a");
+//   link.href = cvURL;
+//   link.download = "cv-santatra.pdf";
+//   document.body.appendChild(link);
+//   link.click();
+//   document.body.removeChild(link);
+// }
 </script>
 <style scoped lang="scss">
 h1 {

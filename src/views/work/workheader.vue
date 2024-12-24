@@ -17,24 +17,22 @@
             >
           </li>
           <li>
-            <a
-              href="#"
-              @click.prevent="filterProjects('Vuejs 3')"
-              >Vuejs 3</a
-            >
+            <a href="#" @click.prevent="filterProjects('Vuejs 3')">Vuejs 3</a>
           </li>
           <li>
             <a href="#" @click.prevent="filterProjects('React Js')">React Js</a>
           </li>
           <li>
-            <a href="#" @click.prevent="filterProjects('Application')">Application</a>
+            <a href="#" @click.prevent="filterProjects('Application')"
+              >Application</a
+            >
           </li>
           <li>
             <a href="#" @click.prevent="filterProjects('grav')">Grav Cms</a>
           </li>
         </ul>
       </div>
-      <transition-group name="list" tag="div" class="row">
+      <transition-group name="list" tag="div" class="row div-scroll">
         <div
           class="col-md-4 mt-3"
           v-for="item in filteredData"
@@ -68,9 +66,8 @@ import Monsite from "../../assets/image/santatramichado.png";
 import Mda from "../../assets/image/mda.png";
 import Lios from "../../assets/image/lios-collection.png";
 import Kcal from "../../assets/image/calcul-kcal.png";
-import ReactJs from "../../assets/image/react-vercel.png"
-import eva from "../../assets/image/eva-car.png"
-
+import ReactJs from "../../assets/image/react-vercel.png";
+import eva from "../../assets/image/eva-car.png";
 
 const data = [
   {
@@ -244,6 +241,28 @@ a {
   opacity: 0;
   transform: translateY(30px);
 }
+.div-scroll {
+  max-height: 750px;
+  overflow-y: scroll; /* Permet le défilement */
+  scrollbar-width: thin; /* Réduit la largeur de la barre pour Firefox */
+  scrollbar-color: #333 transparent; /* Couleur de la barre et du fond pour Firefox */
+}
+
+/* Personnalisation pour les navigateurs WebKit (Chrome, Safari, Edge moderne) */
+.div-scroll::-webkit-scrollbar {
+  width: 5px; /* Définit la largeur de la barre */
+}
+
+.div-scroll::-webkit-scrollbar-thumb {
+  background-color: #333; /* Couleur de la barre */
+  border-radius: 10px; /* Arrondi de la barre */
+}
+
+.div-scroll::-webkit-scrollbar-track {
+  background-color: transparent; /* Couleur de l'arrière-plan */
+}
+
+
 @media (max-width: 470px) {
   .ul-list-proj {
     display: flex;

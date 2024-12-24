@@ -21,6 +21,7 @@
             <a class="nav-link" href="#" @click="about">Curriculum Vitae</a>
             <a class="nav-link" href="#" @click="work">Portfolio</a>
             <a class="nav-link" href="#" @click="contact">Contact</a>
+            <a class="nav-link div-cv" href="#" @click="downloadCV">Download cv</a>
           </div>
         </div>
       </div>
@@ -44,16 +45,27 @@ const contact = async () => {
   router.push("/contact");
 };
 
-import { ref } from 'vue';
+import { ref } from "vue";
 
-const buttonIconClass = ref('bi bi-list');
+const buttonIconClass = ref("bi bi-list");
 
 function toggleButtonText() {
-  if (buttonIconClass.value === 'bi bi-list') {
-    buttonIconClass.value = 'bi bi-x';
+  if (buttonIconClass.value === "bi bi-list") {
+    buttonIconClass.value = "bi bi-x";
   } else {
-    buttonIconClass.value = 'bi bi-list';
+    buttonIconClass.value = "bi bi-list";
   }
+}
+
+import cvURL from "../../assets/autres/cv-santatra.pdf";
+
+function downloadCV() {
+  const link = document.createElement("a");
+  link.href = cvURL;
+  link.download = "cv-santatra.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 </script>
 <style scoped lang="scss">
@@ -78,7 +90,7 @@ nav {
   display: flex;
   justify-content: space-around;
   // text-align: center;
-  margin-left: 15px;
+  // margin-left: 15px;
 }
 .navbar-toggler-icon {
   color: $colorwhite;
@@ -86,5 +98,15 @@ nav {
 i {
   color: $colorwhite;
   font-size: 30px;
+}
+.div-cv {
+  border-radius: 10px;
+  background: black;
+}
+@media only screen and (max-width: 991px) {
+  .nav-link{
+    // padding-left: 10px;
+    text-align: center;
+  }
 }
 </style>
