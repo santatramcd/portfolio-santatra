@@ -117,14 +117,14 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row div-foot-icn">
           <div class="col-lg-12 text-center">
             <div>
               <span>© Copyright {{ currentYear }}</span>
             </div>
           </div>
           <div class="col-lg-8"></div>
-          <div class="col-lg-4 text-center mt-2">
+          <div class="col-lg-4 div-icn-top">
             <a @click="scrollToTop" class="icncent">
               <i class="bi bi-arrow-up-circle"></i>
             </a>
@@ -180,5 +180,13 @@ footer {
 .icncent{
   font-size: 2.5rem;
   cursor: pointer;
+}
+.div-icn-top{
+  margin-top: 10px;
+  text-align: center;
+}
+.div-foot-icn{
+  // background: red;
+  width: 100%;
 }
 </style>
