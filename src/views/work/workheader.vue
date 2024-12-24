@@ -242,10 +242,10 @@ a {
   transform: translateY(30px);
 }
 .div-scroll {
-  max-height: 750px;
+  max-height: 725px;
   overflow-y: scroll; /* Permet le défilement */
   scrollbar-width: thin; /* Réduit la largeur de la barre pour Firefox */
-  scrollbar-color: #333 transparent; /* Couleur de la barre et du fond pour Firefox */
+  scrollbar-color: #45f3ff transparent; /* Couleur de la barre et du fond pour Firefox */
 }
 
 /* Personnalisation pour les navigateurs WebKit (Chrome, Safari, Edge moderne) */
