@@ -53,19 +53,21 @@
       ref="modal"
     >
       <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
+        <div class="modal-content" style="background: rgba(0, 0, 0, 0.6);">
           <div class="modal-header">
-            <h5 class="modal-title" style="text-transform: uppercase" id="exampleModalLabel">
+            <h5 class="modal-title" style="text-transform: uppercase; color:#eee" id="exampleModalLabel">
               {{ selectedItem?.title || "Projet" }}
             </h5>
-            <button
+            <a
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-            ></button>
+              style="color: #fff;"
+            >
+            <i class="bi bi-x-lg"></i></a>
           </div>
-          <div class="modal-body">
+          <div class="modal-body overflow-body">
             <div
               id="carouselExampleControls"
               class="carousel slide"
@@ -347,6 +349,11 @@ a {
   /* transform: translateY(30px); */
   transform: scale(0.8);
 }
+.overflow-body{
+  overflow-y: auto; /* Permet le défilement */
+  scrollbar-width: thin; /* Réduit la largeur de la barre pour Firefox */
+  scrollbar-color:transparent transparent; /* Couleur de la barre et du fond pour Firefox */
+}
 .div-scroll {
   max-height: 725px;
   overflow-y: auto; /* Permet le défilement */
@@ -377,6 +384,9 @@ a {
 }
 a:hover {
   color: #45f3ff;
+}
+.modal-header{
+  border-bottom: 1px solid black;
 }
 @media (max-width: 470px) {
   .ul-list-proj {
