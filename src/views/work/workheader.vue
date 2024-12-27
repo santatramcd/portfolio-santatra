@@ -55,7 +55,7 @@
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content" style="background: rgba(0, 0, 0, 0.6);">
           <div class="modal-header">
-            <h5 class="modal-title" style="text-transform: uppercase; color:#eee" id="exampleModalLabel">
+            <h5 class="modal-title" style="text-transform: uppercase;" id="exampleModalLabel">
               {{ selectedItem?.title || "Projet" }}
             </h5>
             <a
@@ -254,9 +254,11 @@ ul {
   color: #fff;
   background-color: #111;
 }
+.modal-title{
+  color: rgba(255, 255, 255, 0.5);
 
+}
 a {
-  color: #fff;
   text-decoration: none;
 }
 .hover-div {
@@ -267,6 +269,8 @@ a {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  border-radius: 10px;
+
 }
 .element::before {
   display: block;
@@ -306,6 +310,8 @@ a {
   opacity: 0;
   transform: scale(0.8);
   transition: all 0.3s ease;
+  border-radius: 10px;
+
 }
 
 .divcard {
@@ -319,7 +325,7 @@ a {
 }
 
 .image {
-  height: 300px;
+  height: 222px;
 }
 .image img {
   width: 100%;
@@ -328,6 +334,7 @@ a {
   object-fit: cover;
   aspect-ratio: 1 / 1;
   height: 100%;
+  border-radius: 10px;
 }
 
 .title-card {
@@ -355,7 +362,7 @@ a {
   scrollbar-color:transparent transparent; /* Couleur de la barre et du fond pour Firefox */
 }
 .div-scroll {
-  max-height: 725px;
+  max-height: 500px;
   overflow-y: auto; /* Permet le défilement */
   scrollbar-width: thin; /* Réduit la largeur de la barre pour Firefox */
   scrollbar-color: #45f3ff transparent; /* Couleur de la barre et du fond pour Firefox */
@@ -381,9 +388,13 @@ a {
   text-align: center;
   width: 100%;
   max-height: 38px;
+  color: rgba(255, 255, 255, 0.5);
+}
+a{
+  color: rgba(255, 255, 255, 0.5);
 }
 a:hover {
-  color: #45f3ff;
+  color: #fff;
 }
 .modal-header{
   border-bottom: 1px solid black;

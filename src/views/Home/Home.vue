@@ -1,16 +1,13 @@
 <template>
   <div>
-    <HomeHead />
-    <Homeslider/>
-    <HomeDiv data-aos="fade-up"/>
-    <HomeTech/>
+    <HomeNews/>
+    <HomeDivisionNews/>
   </div>
 </template>
 <script setup>
-import HomeHead from '../Home/HomeHead.vue'
-import HomeTech from '../Home/HomeTechnology.vue'
-import HomeDiv from '../Home/Homediv.vue/';
-import Homeslider from './Homeslider.vue';
+import HomeNews from './HomeNews.vue';
+import HomeDivisionNews from './HomeDivisionNews.vue'
+
 
 AOS.init({
   offset: 400,
