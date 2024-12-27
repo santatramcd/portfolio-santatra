@@ -9,8 +9,9 @@
         <section id="about" class="about section">
           <div class="container">
             <div class="row gy-4 justify-content-center">
-              <div class="col-lg-4">
-                <img :src="Profil" class="img-fluid" alt="" />
+              <div class="col-lg-4 image-container-zoom" ref="imageContainer">
+                <img :src="Profil" class="img-fluid" ref="img"/>
+                <div class="zoom" ref="zoom"></div>
               </div>
               <div class="col-lg-6 content">
                 <h2>Développeur Web professionnel</h2>
@@ -74,17 +75,40 @@
   </div>
 </template>
 <script setup>
-// import cvURL from "../../assets/autres/cv-santatra.pdf";
 import Profil from "../../assets/image/portrait.jpg";
 
-// function downloadCV() {
-//   const link = document.createElement("a");
-//   link.href = cvURL;
-//   link.download = "cv-santatra.pdf";
-//   document.body.appendChild(link);
-//   link.click();
-//   document.body.removeChild(link);
-// }
+import { ref, onMounted } from "vue";
+
+const imageContainer = ref(null);
+const img = ref(null);
+const zoom = ref(null);
+
+onMounted(() => {
+  const container = imageContainer.value;
+  const image = img.value;
+  const zoomDiv = zoom.value;
+
+  if (!container || !image || !zoomDiv) return;
+
+  container.addEventListener("mousemove", (e) => {
+    const { left, top, width, height } = container.getBoundingClientRect();
+    const x = e.clientX - left;
+    const y = e.clientY - top;
+    const xPercent = (x / width) * 100;
+    const yPercent = (y / height) * 100;
+
+    zoomDiv.style.backgroundImage = `url(${image.src})`;
+    zoomDiv.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
+  });
+
+  container.addEventListener("mouseenter", () => {
+    zoomDiv.style.display = "block";
+  });
+
+  container.addEventListener("mouseleave", () => {
+    zoomDiv.style.display = "none";
+  });
+});
 </script>
 <style scoped lang="scss">
 h1 {
@@ -158,7 +182,30 @@ section,
   scroll-margin-top: 100px;
   overflow: clip;
 }
+.image-container-zoom {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
 
+.image-container-zoom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: alias;
+}
+
+.zoom {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 200%; /* Augmente l'effet de zoom */
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
 @media (max-width: 1199px) {
   section,
   .section {

@@ -311,7 +311,6 @@ a {
 
 .divcard {
   position: relative;
-  background-color: red;
   transition: transform 0.3s ease; /* Ajout pour l'animation */
 }
 
