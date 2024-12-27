@@ -11,7 +11,7 @@
       </ul>
       <transition-group name="list" tag="div" class="row div-scroll">
         <div
-          class="col-md-4 mt-3"
+          class="col-md-4 mt-4"
           v-for="item in filteredData"
           :key="item.link"
         >
