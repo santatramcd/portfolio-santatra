@@ -208,9 +208,6 @@ const technologies = [
 ];
 const selectedItem = ref(null);
 
-// Calculer les données filtrées en fonction de la technologie sélectionnée
-
-// Fonction pour filtrer les projets
 // Fonction pour ouvrir le modal et afficher les détails du projet sélectionné
 function openModal(item) {
   selectedItem.value = item;
