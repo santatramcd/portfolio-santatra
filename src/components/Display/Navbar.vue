@@ -3,6 +3,20 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid container">
         <a class="nav-link navbar-brand" href="#" @click="home">SANTATRA®</a>
+        <div class="langage">
+          <div>
+            <span><img :src="$t('drapeau')" alt="drapeau" /></span>
+            <select v-model="$i18n.locale">
+              <option
+                v-for="locale in $i18n.availableLocales"
+                :key="`locale-${locale}`"
+                :value="locale"
+              >
+                {{ locale }}
+              </option>
+            </select>
+          </div>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -126,6 +140,7 @@ select {
   border: none;
   background: black;
   cursor: pointer;
+  text-transform: capitalize;
 }
 img {
   width: 25px;
@@ -135,10 +150,27 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
+.langage{
+  display: none;
+}
 @media only screen and (max-width: 991px) {
   .nav-link {
     // padding-left: 10px;
     text-align: center;
   }
+}
+@media only screen and (max-width: 380px) {
+  .langage{
+  display: flex;
+}
+.div-langage{
+  display: none;
+}
+select {
+height: 25px;
+}
+img {
+width: 31px;
+}
 }
 </style>
