@@ -2,18 +2,13 @@
   <div>
     <div class="container">
       <div class="mt-5 divis-contact">
-        <h1>Contacte-moi</h1>
+        <h1>{{ $t("contact") }}</h1>
         <p>
-          Je suis un développeur web spécialisé dans la création de sites
-          dynamiques et conviviaux. À la recherche de nouveaux projets
-          passionnants, je suis disponible pour des missions freelance ou des
-          opportunités en entreprise. Contactez-moi pour discuter de vos besoins
-          en développement web. Flexible pour travailler à distance ou en
-          présentiel. Créons ensemble des solutions innovantes !
+          {{ $t("creation") }}
         </p>
       </div>
       <div>
-        <a @click="copierTexte" class="a-down">Copier mon adresse email</a>
+        <a @click="copierTexte" class="a-down">{{ $t("copiemail") }}</a>
       </div>
       <div>
         <Form />

@@ -5,7 +5,7 @@
         <div class="divii">
           <div class="div1">
             <div class="input h11">
-              <h1>envoyer un mail</h1>
+              <h1>{{ $t("sendmail") }}</h1>
             </div>
             <div class="input">
               <input
@@ -213,6 +213,7 @@ h1 {
   color: #45f3ff;
   padding-top: 15px;
   text-shadow: 2px 5px 4px;
+  text-transform: capitalize;
 }
 
 .inptaj,

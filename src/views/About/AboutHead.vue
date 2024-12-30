@@ -14,9 +14,9 @@
                 <div class="zoom" ref="zoom"></div>
               </div>
               <div class="col-lg-6 content">
-                <h2>Développeur Web professionnel</h2>
+                <h2>{{ $t("devpro") }}</h2>
                 <p class="fst-italic py-3">
-                  Je m’appelle Santatra Michado, développeur web passionné et spécialisé dans la création de sites web modernes et sur mesure. Avec une solide expérience en développement front-end, notamment avec VueJs , j’aide mes clients à concrétiser leurs idées digitales, que ce soit pour un site vitrine, un portfolio, une boutique en ligne, ou une plateforme de formation.
+                  {{ $t("SM") }}
                 </p>
                 <div class="row">
                   <div class="col-lg-6">
@@ -61,7 +61,7 @@
                   </div>
                 </div>
                 <p class="py-3">
-                  Vous êtes étudiant, dirigez une école, une université, un centre de formation, un centre de fitness, un hôtel, une entreprise de location de voitures, une société de bâtiment, ou autre ? Vous avez besoin d’un site web pour représenter votre activité ou toucher un plus grand public ? Je suis là pour vous aider ! Que vous ayez besoin d’une présence en ligne professionnelle, d’un site fonctionnel et performant, ou d’une plateforme sur mesure, je m’engage à fournir un site de qualité, optimisé pour l’expérience utilisateur et le référencement.
+                  {{ $t("project") }}
                 </p>
                 <!-- <div>
                   <a @click="downloadCV" class="a-down">Telecharger mon CV</a>

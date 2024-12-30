@@ -9,13 +9,13 @@
             data-aos-delay="100"
           >
             <h2>
-              <span>Je suis </span>
-              <span class="underlight">Santatra {{ titleStyled }}</span> un développeur web<span> basé à Madagascar</span>
+              <span>{{ $t("Je") }}</span>
+              <span class="underlight">Santatra {{ titleStyled }}</span> {{ $t("devweb") }} <span> {{ $t("mada") }} </span>
             </h2>
             <p>
-              Je crée des sites web modernes et performants pour donner vie à vos projets digitaux. Mon objectif est de concevoir des solutions sur mesure, alliant design attrayant et expérience utilisateur optimale.
+              {{ $t("site") }}
             </p>
-            <a href="#" class="btn-get-started" @click="work"> Available for Hire </a>
+            <a href="#" class="btn-get-started" @click="work"> {{ $t("dispo") }} </a>
           </div>
         </div>
       </div>

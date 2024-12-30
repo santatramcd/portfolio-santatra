@@ -17,11 +17,29 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#" @click="home">Accueil</a>
-            <a class="nav-link" href="#" @click="about">Curriculum Vitae</a>
+            <a class="nav-link" href="#" @click="home">{{ $t("Home") }}</a>
+            <a class="nav-link" href="#" @click="about">{{ $t("Resume") }}</a>
             <a class="nav-link" href="#" @click="work">Portfolio</a>
             <a class="nav-link" href="#" @click="contact">Contact</a>
-            <a class="nav-link div-cv" href="#" @click="downloadCV">Download cv</a>
+            <a class="nav-link div-cv" href="#" @click="downloadCV">
+              {{ $t("Download") }}</a
+            >
+            <a class="nav-link" href="#">
+              <div class="div-langage">
+                <div>
+                  <span><img :src="$t('drapeau')" alt="drapeau" /></span>
+                  <select v-model="$i18n.locale">
+                    <option
+                      v-for="locale in $i18n.availableLocales"
+                      :key="`locale-${locale}`"
+                      :value="locale"
+                    >
+                      {{ locale }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -101,10 +119,24 @@ i {
 }
 .div-cv {
   border-radius: 10px;
+  // background: black;
+}
+select {
+  color: #fff;
+  border: none;
   background: black;
+  cursor: pointer;
+}
+img {
+  width: 25px;
+}
+.div-langage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 @media only screen and (max-width: 991px) {
-  .nav-link{
+  .nav-link {
     // padding-left: 10px;
     text-align: center;
   }

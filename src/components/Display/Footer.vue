@@ -1,17 +1,5 @@
 <template>
   <div>
-    <!-- <div class="container">
-            <div class="row">
-                <div class="col-lg-4 text-center"><h2>ANDRIANJAKA SANTATRA</h2></div>
-                <div class="col-lg-4 text-center"><span>© {{ currentYear }}</span></div>
-                <div class="col-lg-4 text-center pt-2"><div>
-            <a @click="scrollToTop" class="icncent">
-              <i class="bi bi-arrow-up-circle"></i>
-            </a>
-          </div></div>
-            </div>
-        </div> -->
-
     <div class="div-foot-div">
       <footer class="bd-footer py-5 mt-5">
         <div class="container py-5">
@@ -20,10 +8,7 @@
               <h5>SANTATRA MICHADO</h5>
               <ul class="list-unstyled small text-muted">
                 <li class="mb-2 text-justify">
-                  Disponible pour des missions freelance, je vous invite à me
-                  contacter pour échanger sur vos besoins et objectifs.
-                  Ensemble, donnons vie à vos projets et créons un site web qui
-                  reflète l’essence de votre activité !
+                  {{ $t("footerdispo") }}
                 </li>
               </ul>
             </div>
@@ -33,14 +18,14 @@
                 <li class="mb-2">
                   <a href="#"
                     ><router-link class="route-a" to="/"
-                      >ACCUEIL</router-link
+                      >{{ $t("Home") }}</router-link
                     ></a
                   >
                 </li>
                 <li class="mb-2">
                   <a href="#"
                     ><router-link class="route-a" to="/about"
-                      >CURRICULUM VITAE</router-link
+                      >{{ $t("Resume") }}</router-link
                     ></a
                   >
                 </li>
@@ -95,11 +80,11 @@
               </ul>
             </div>
             <div class="col-6 col-lg-2 mb-3">
-              <h5>Contactez-nous</h5>
+              <h5>{{ $t("contact") }}</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
                   <a href="#"
-                    >Retrouvez nos offres et bénéficiez de conseils d'experts</a
+                    >{{ $t("offrexpert") }}</a
                   >
                 </li>
                 <li class="mb-2">
@@ -108,11 +93,16 @@
               </ul>
               <ul class="list-unstyled reseau">
                 <li class="mb-2">
-                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100010304222710"><i class="bi bi-facebook"></i></a>
                 </li>
                 <li class="mb-2">
-                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="https://github.com/santatramcd"><i class="bi bi-github"></i></a>
                 </li>
+                <li class="mb-2">
+                  <a href="#"><img :src="$t('drapeau')" alt="drapeau" /></a>
+                </li>
+                
+
               </ul>
             </div>
           </div>
@@ -170,6 +160,7 @@ footer {
 }
 .route-a {
   font-size: 13px;
+  text-transform: uppercase;
 }
 .reseau {
   display: flex;
@@ -188,5 +179,9 @@ footer {
 .div-foot-icn{
   // background: red;
   width: 100%;
+}
+img{
+  margin-top: -8px;
+  width: 35px;
 }
 </style>
