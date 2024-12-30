@@ -40,7 +40,7 @@
         </div>
       </form>
     </div>
-    <div class="mt-5" style="color: #fff">
+    <div class="mt-5" style="color: #eee">
       <div class="row">
         <div class="col-lg-4 mt-5">
           <div class="div-icn-contact">
@@ -143,7 +143,8 @@ const sendMail = () => {
   content: "";
   position: absolute;
   top: -50%;
-  left: 0;
+  // left: 0;
+  left: -200px;
   width: 380px;
   height: 420px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
@@ -155,7 +156,8 @@ const sendMail = () => {
   content: "";
   position: absolute;
   top: -50%;
-  left: 0;
+  // left: 0;
+  left: -200px;
   width: 380px;
   height: 420px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
@@ -193,7 +195,6 @@ const sendMail = () => {
   // margin-top: -23px;
   position: relative;
   z-index: 100;
-
   margin-top: 2px;
   padding-top: 29px;
 }
@@ -248,11 +249,16 @@ h1 {
 }
 .div-icn-contact {
   padding: 15px;
-  border: 1px solid #fff;
+  border: 1px solid #eee;
 }
 @media only screen and (max-width: 940px) {
   .formulaire {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .divii {
+    width: 98.3%;
   }
 }
 </style>

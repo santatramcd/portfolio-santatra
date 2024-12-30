@@ -148,5 +148,6 @@ i {
   padding: 5px 8px;
   display: inline-block;
   cursor: pointer;
+  text-transform: capitalize;
 }
 </style>
