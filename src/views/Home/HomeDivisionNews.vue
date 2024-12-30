@@ -1,6 +1,7 @@
 <template>
   <div>
-    <section id="gallery" class="gallery section">
+    <!-- version pc -->
+    <section id="gallery" class="gallery section section-pc">
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
           <div
@@ -34,6 +35,63 @@
       </div>
     </section>
 
+    <!-- Version Mobile -->
+    <div
+      class="container-fluid gallery section-mobile"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active boutton-slide"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            v-for="(item, index) in galleryItems.slice(1)"
+            :key="'indicator-' + index"
+            type="button"
+            :data-bs-target="'#carouselExampleIndicators'"
+            :data-bs-slide-to="index + 1"
+            :aria-label="'Slide ' + (index + 2)"
+            class="boutton-slide"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            v-for="(item, index) in galleryItems"
+            :key="'carousel-' + index"
+            class="carousel-item gallery-item"
+            :class="{ active: index === 0 }"
+          >
+            <img :src="item.imgSrc" class="img-fluid" :alt="item.title" />
+            <div
+              class="gallery-links d-flex align-items-center justify-content-center"
+            >
+              <a
+                href="javascript:void(0)"
+                class="glightbox preview-link"
+                @click="openModal(item)"
+              >
+                <i class="bi bi-arrows-angle-expand"></i>
+              </a>
+              <a :href="item.detailsLink" target="_blank" class="details-link">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div
       class="modal fade"
@@ -44,9 +102,13 @@
       ref="modal"
     >
       <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content" style="background: rgba(0, 0, 0, 0.9);">
-          <div class="modal-header" style="border-bottom: 1px solid black;">
-            <h5 class="modal-title" style="text-transform: uppercase; color:#eee" id="exampleModalLabel">
+        <div class="modal-content" style="background: rgba(0, 0, 0, 0.9)">
+          <div class="modal-header" style="border-bottom: 1px solid black">
+            <h5
+              class="modal-title"
+              style="text-transform: uppercase; color: #eee"
+              id="exampleModalLabel"
+            >
               {{ selectedItem?.title || "Projet" }}
             </h5>
             <a
@@ -54,9 +116,10 @@
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-              style="color:#eee"
+              style="color: #eee"
             >
-            <i class="bi bi-x-lg"></i></a>
+              <i class="bi bi-x-lg"></i
+            ></a>
           </div>
           <div class="modal-body overflow-body">
             <div
@@ -225,9 +288,37 @@ function openModal(item) {
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
-.overflow-body{
+.overflow-body {
   overflow-y: auto; /* Permet le défilement */
   scrollbar-width: thin; /* Réduit la largeur de la barre pour Firefox */
-  scrollbar-color:transparent transparent; /* Couleur de la barre et du fond pour Firefox */
+  scrollbar-color: transparent transparent; /* Couleur de la barre et du fond pour Firefox */
+}
+.carousel-indicators {
+  position: absolute;
+  top: 250px;
+}
+.boutton-slide {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.boutton-slide.active {
+  background: #45f3ff;
+}
+.section-mobile {
+  display: none;
+}
+.section-pc {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .section-mobile {
+    display: block;
+    margin-bottom: 140px;
+  }
+  .section-pc {
+    display: none;
+  }
 }
 </style>
