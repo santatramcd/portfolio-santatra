@@ -17,8 +17,8 @@
               {{ $t("site") }}
             </p>
             <a href="#" class="btn-get-started" @click="downloadCV">
-              {{ $t("Download") }} <span><i class="bi bi-download"></i></span
-            ></a>
+              <span><i class="bi bi-download"></i></span
+            > {{ $t("Download") }} </a>
           </div>
         </div>
       </div>
@@ -131,8 +131,9 @@ function downloadCV() {
 }
 .hero .btn-get-started {
   color: #eee;
-  background: #27a776;
-  font-weight: 400;
+  // background: #27a776;
+  background: linear-gradient(to bottom, #27a776, #09442c);
+  font-weight: 500;
   font-size: 14px;
   display: inline-block;
   padding: 12px 40px;
@@ -140,7 +141,11 @@ function downloadCV() {
   transition: 0.5s;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 a {
   text-decoration: none;
 }
