@@ -140,17 +140,19 @@ select {
   border: none;
   background: black;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 img {
   width: 25px;
+  margin-top: 2px;
 }
 .div-langage {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.langage{
+.langage {
   display: none;
 }
 @media only screen and (max-width: 991px) {
@@ -160,17 +162,18 @@ img {
   }
 }
 @media only screen and (max-width: 380px) {
-  .langage{
-  display: flex;
-}
-.div-langage{
-  display: none;
-}
-select {
-height: 25px;
-}
-img {
-width: 31px;
-}
+  .langage {
+    display: flex;
+  }
+  .div-langage {
+    display: none;
+  }
+  select {
+    height: 25px;
+  }
+  img {
+    width: 31px;
+    margin-top: 0px;
+  }
 }
 </style>

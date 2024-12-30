@@ -155,7 +155,7 @@ a {
   text-align: justify;
 }
 footer {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
 }
 .route-a {
