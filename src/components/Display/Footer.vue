@@ -90,6 +90,10 @@
                 <li class="mb-2">
                   <a href="#">+261 32 46 658 49</a>
                 </li>
+                <li class="mb-2">
+                  <a href="https://santatra-michado.com">https://santatra-michado.com</a>
+                </li>
+                
               </ul>
               <ul class="list-unstyled reseau">
                 <li class="mb-2">

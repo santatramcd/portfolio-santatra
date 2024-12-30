@@ -27,7 +27,7 @@
                       </li>
                       <li>
                         <i class="bi bi-chevron-right"></i>
-                        <strong>Website:</strong> <span>santatra-michado.com</span>
+                        <strong>Website:</strong> <span><a href="https://santatra-michado.com/">santatra-michado.com</a></span>
                       </li>
                       <li>
                         <i class="bi bi-chevron-right"></i>
@@ -63,9 +63,6 @@
                 <p class="py-3">
                   {{ $t("project") }}
                 </p>
-                <!-- <div>
-                  <a @click="downloadCV" class="a-down">Telecharger mon CV</a>
-                </div> -->
               </div>
             </div>
           </div>
@@ -130,16 +127,8 @@ img {
 p{
   text-align: justify;
 }
-.a-down {
-  text-decoration: none;
-  background-color: black;
+a {
   color: #fff;
-  // margin-left: 20px;
-  font-weight: 500;
-  padding: 5px 8px;
-  display: inline-block;
-  cursor: pointer;
-  box-shadow: 2px 3px 7px grey;
 }
 /*--------------------------------------------------------------
 # About Section

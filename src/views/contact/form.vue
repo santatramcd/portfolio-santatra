@@ -249,7 +249,8 @@ h1 {
 }
 .div-icn-contact {
   padding: 15px;
-  border: 1px solid #eee;
+  border: 1px solid rgba(238, 238, 238, 0.462);
+  border-radius: 10px;
 }
 @media only screen and (max-width: 940px) {
   .formulaire {
