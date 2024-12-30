@@ -10,12 +10,15 @@
           >
             <h2>
               <span>{{ $t("Je") }}</span>
-              <span class="underlight">Santatra {{ titleStyled }}</span> {{ $t("devweb") }} <span> {{ $t("mada") }} </span>
+              <span class="underlight">Santatra {{ titleStyled }}</span>
+              {{ $t("devweb") }} <span> {{ $t("mada") }} </span>
             </h2>
             <p>
               {{ $t("site") }}
             </p>
-            <a href="#" class="btn-get-started" @click="work"> {{ $t("dispo") }} </a>
+            <a href="#" class="btn-get-started" @click="downloadCV">
+              {{ $t("Download") }} <span><i class="bi bi-download"></i></span
+            ></a>
           </div>
         </div>
       </div>
@@ -61,12 +64,16 @@ function writeText() {
   }, 150);
 }
 
-import { useRouter } from "vue-router";
-const router = useRouter();
-const work = () => {
-  router.push("/work");
-};
+import cvURL from "../../assets/autres/cv-santatra.pdf";
 
+function downloadCV() {
+  const link = document.createElement("a");
+  link.href = cvURL;
+  link.download = "cv-santatra.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 </script>
 <style scoped lang="scss">
 /*--------------------------------------------------------------
@@ -139,5 +146,9 @@ a {
 }
 .hero .btn-get-started:hover {
   background-color: color-mix(in srgb, #27a776 90%, white 10%);
+}
+.bi-download::before {
+  content: "\f30a";
+  font-weight: bolder !important;
 }
 </style>

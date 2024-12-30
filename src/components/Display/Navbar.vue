@@ -35,9 +35,6 @@
             <a class="nav-link" href="#" @click="about">{{ $t("Resume") }}</a>
             <a class="nav-link" href="#" @click="work">Portfolio</a>
             <a class="nav-link" href="#" @click="contact">Contact</a>
-            <a class="nav-link div-cv" href="#" @click="downloadCV">
-              {{ $t("Download") }}</a
-            >
             <a class="nav-link" href="#">
               <div class="div-langage">
                 <div>
@@ -89,16 +86,7 @@ function toggleButtonText() {
   }
 }
 
-import cvURL from "../../assets/autres/cv-santatra.pdf";
 
-function downloadCV() {
-  const link = document.createElement("a");
-  link.href = cvURL;
-  link.download = "cv-santatra.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
 </script>
 <style scoped lang="scss">
 $colorblack: var(--token-d06c6878-f8de-4d7e-a60a-d0bb19103013, #23242a);
