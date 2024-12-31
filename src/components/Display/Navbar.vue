@@ -118,12 +118,12 @@ function toggleButtonText() {
 // dark mode
 import { ref } from "vue";
 
-const theme = ref(localStorage.getItem("theme") || "light");
+const theme = ref(localStorage.getItem("theme") || "dark");
 
 const toggleDark = () => {
-  theme.value = theme.value === "light" ? "dark" : "light";
+  theme.value = theme.value === "dark" ? "light" : "dark";
   localStorage.setItem("theme", theme.value);
-  document.body.classList.remove("light", "dark");
+  document.body.classList.remove("dark", "light");
   document.body.classList.add(theme.value);
 };
 document.body.classList.add(theme.value);
