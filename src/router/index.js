@@ -3,7 +3,7 @@ import Home from '../views/Home/Home.vue'
 import About from '../views/About/About.vue'
 import Work from '../views/work/work.vue'
 import Contact from '../views/contact/contact.vue'
-
+import NotFound from "../views/NotFound.vue";
 const routes = [
     {
         path: '/',
@@ -25,6 +25,11 @@ const routes = [
         name: 'Contact',
         component: Contact
     },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "NotFound",
+        component: NotFound,
+      },
 ]
 
 const router = createRouter({

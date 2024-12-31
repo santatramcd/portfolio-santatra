@@ -289,9 +289,9 @@ function openModal(item) {
   margin: 0;
 }
 .overflow-body {
-  overflow-y: auto; /* Permet le défilement */
-  scrollbar-width: thin; /* Réduit la largeur de la barre pour Firefox */
-  scrollbar-color: transparent transparent; /* Couleur de la barre et du fond pour Firefox */
+  overflow-y: auto; 
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent;
 }
 .carousel-indicators {
   position: absolute;

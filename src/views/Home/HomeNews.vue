@@ -86,7 +86,7 @@ function downloadCV() {
   padding: 120px 0 120px 0;
   display: flex;
   align-items: center;
-  color: #eee;
+  // color: #eee;
   // background: url("../../../public/photos.JPG");
   background-repeat: no-repeat;
   background-position: center top;
@@ -119,7 +119,7 @@ function downloadCV() {
 }
 
 .hero p {
-  color: #eee;
+  // color: #eee;
   margin-bottom: 30px;
   font-size: 18px;
 }

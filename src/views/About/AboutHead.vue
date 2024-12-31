@@ -157,7 +157,7 @@ a {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #fff;
+  // color: #fff;
   line-height: 0;
 }
 /*--------------------------------------------------------------
@@ -165,7 +165,7 @@ a {
 --------------------------------------------------------------*/
 section,
 .section {
-  color: #fff;
+  // color: #fff;
   // background-color: red;
   padding: 60px 0;
   scroll-margin-top: 100px;

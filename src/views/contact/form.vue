@@ -40,7 +40,7 @@
         </div>
       </form>
     </div>
-    <div class="mt-5" style="color: #eee">
+    <div class="mt-5">
       <div class="row">
         <div class="col-lg-4 mt-5">
           <div class="div-icn-contact">
@@ -125,7 +125,7 @@ const sendMail = () => {
   justify-content: center;
   align-items: center;
   // min-height: 100vh;
-  background-color: #23242a;
+  // background-color: #23242a;
   margin-top: 100px;
 }
 

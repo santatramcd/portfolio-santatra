@@ -86,7 +86,7 @@ label {
   padding: 5px 0;
   font-size: $param;
   font-weight: 600;
-  color: $colorwhite;
+  // color: $colorwhite;
 }
 textarea {
   height: 150px;
@@ -100,7 +100,7 @@ button {
   border: 1px solid $colorwhite;
   background-color: $colorblack;
   font-weight: 600;
-  color: $colorwhite;
+  // color: $colorwhite;
 }
 .col-input-btn {
   display: flex;
@@ -123,7 +123,7 @@ span {
   align-content: space-around;
   justify-content: center;
   border-radius: 50%;
-  color: $colorwhite;
+  // color: $colorwhite;
   background-color: $colorblack;
   border: 1px solid $colorwhite;
 }
@@ -133,10 +133,10 @@ i {
 .par-cont {
   padding: 12px;
   font-weight: 600;
-  color: $colorwhite;
+  // color: $colorwhite;
 }
 .divis-contact {
-  color: $colorwhite;
+  // color: $colorwhite;
   text-align: justify;
 }
 .a-down {

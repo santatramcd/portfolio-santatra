@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <h1 style="color: #fff; text-transform: uppercase">{{ $t("realisation") }} :</h1>
+      <h1 style="text-transform: uppercase">{{ $t("realisation") }} :</h1>
       <ul class="ul-list-proj">
         <li v-for="tech in technologies" :key="tech">
           <a href="javascript:void(0)" @click.prevent="filterProjects(tech)">
@@ -233,7 +233,6 @@ onMounted(() => {
 }
 h1 {
   padding: 50px 0px;
-  color: white;
   font-size: 30px;
 }
 ul {
