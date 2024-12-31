@@ -63,7 +63,7 @@
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-              style="color: #fff;"
+              style="color: #fff!important;"
             >
             <i class="bi bi-x-lg"></i></a>
           </div>
@@ -387,10 +387,10 @@ a {
   text-align: center;
   width: 100%;
   max-height: 38px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 a{
-  color: rgba(255, 255, 255, 0.5);
+  // color: #ccc!important;
 }
 a:hover {
   color: #fff;

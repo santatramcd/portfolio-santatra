@@ -153,14 +153,14 @@ const scrollToTop = () => {
 li,
 a {
   text-decoration: none;
-  color: #fff !important;
+  // color: #fff !important;
 }
 .text-justify {
   text-align: justify;
 }
 footer {
   background-color: #000000;
-  color: #fff;
+  // color: #fff;
 }
 .route-a {
   font-size: 13px;

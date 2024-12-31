@@ -77,13 +77,22 @@ input:checked + .slider:before {
   transform: translateX(26px); /* Déplace le rond */
 }
 body.light {
+    footer{
+        background-color: #ccc;
+    }
+  li,
+  a,
   .nav-link {
-    color: #23242a;
+    color: #000000;
   }
 }
 
 /* Styles pour le mode sombre */
 body.dark {
+  a,
+  li{
+    color: #fff;
+  }
   .i-dark,
   .nav-link {
     color: #eee;
