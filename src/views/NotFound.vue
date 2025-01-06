@@ -86,10 +86,10 @@ body.light {
     color: #000000;
   }
   .divii {
-    background-color: #eee;
+    background-color: #fff;
   }
   .inpt {
-    background-color: #eee;
+    background-color: #fff;
   }
   .sendmailForm {
     color: #000000;
