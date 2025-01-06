@@ -20,7 +20,7 @@
         <div class="langage">
           <div>
             <span><img :src="$t('drapeau')" alt="drapeau" /></span>
-            <select v-model="$i18n.locale">
+            <select class="i18n" v-model="$i18n.locale">
               <option
                 v-for="locale in $i18n.availableLocales"
                 :key="`locale-${locale}`"
@@ -53,7 +53,7 @@
               <div class="div-langage">
                 <div>
                   <span><img :src="$t('drapeau')" alt="drapeau" /></span>
-                  <select v-model="$i18n.locale">
+                  <select v-model="$i18n.locale" class="i18n">
                     <option
                       v-for="locale in $i18n.availableLocales"
                       :key="`locale-${locale}`"
@@ -152,9 +152,7 @@ nav {
   // text-align: center;
   // margin-left: 15px;
 }
-.navbar-toggler-icon {
-  // color: $colorwhite;
-}
+
 i {
   // color: $colorwhite;
   font-size: 30px;
@@ -163,7 +161,7 @@ i {
   border-radius: 10px;
   // background: black;
 }
-select {
+.i18n {
   color: #eee;
   border: none;
   background: black;

@@ -77,25 +77,57 @@ input:checked + .slider:before {
   transform: translateX(26px); /* Déplace le rond */
 }
 body.light {
-    footer{
-        background-color: #ccc;
-    }
+  footer {
+    background-color: #ccc;
+  }
   li,
   a,
   .nav-link {
     color: #000000;
+  }
+  .divii {
+    background-color: #eee;
+  }
+  .inpt {
+    background-color: #eee;
+  }
+  .sendmailForm {
+    color: #000000;
+  }
+  .div-icn-contact {
+    border: 1px solid #333;
+  }
+  .i18n {
+    color: #23242a;
+    background: #eee;
   }
 }
 
 /* Styles pour le mode sombre */
 body.dark {
   a,
-  li{
+  li {
     color: #fff;
   }
   .i-dark,
   .nav-link {
     color: #eee;
+  }
+  .divii {
+    background-color: #28292d;
+  }
+  .inpt {
+    background-color: #28292d;
+  }
+  .sendmailForm {
+    color: #45f3ff;
+  }
+  .div-icn-contact {
+    border: 1px solid rgba(238, 238, 238, 0.462);
+  }
+  .i18n {
+    color: #eee;
+    background: #23242a;
   }
 }
 </style>

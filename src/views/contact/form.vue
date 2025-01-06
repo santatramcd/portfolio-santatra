@@ -5,7 +5,7 @@
         <div class="divii">
           <div class="div1">
             <div class="input h11">
-              <h1>{{ $t("sendmail") }}</h1>
+              <h1 class="sendmailForm">{{ $t("sendmail") }}</h1>
             </div>
             <div class="input">
               <input
@@ -188,7 +188,7 @@ const sendMail = () => {
 .divii {
   width: 99.3%;
   height: 395px;
-  background-color: #28292d;
+  // background-color: #28292d;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -208,7 +208,7 @@ const sendMail = () => {
   text-align: center;
 }
 
-h1 {
+.sendmailForm {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
   color: #45f3ff;
@@ -227,7 +227,7 @@ h1 {
 .inpt {
   padding-left: 10px;
   color: #fff;
-  background-color: #28292d;
+  // background-color: #28292d;
   border: none;
   border-bottom: 2px solid #45f3ff;
 }
@@ -249,7 +249,7 @@ h1 {
 }
 .div-icn-contact {
   padding: 15px;
-  border: 1px solid rgba(238, 238, 238, 0.462);
+  // border: 1px solid rgba(238, 238, 238, 0.462);
   border-radius: 10px;
 }
 @media only screen and (max-width: 940px) {
