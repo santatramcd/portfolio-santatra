@@ -54,7 +54,7 @@
 
 .slider i.bi-moon-stars-fill {
   right: 5px; /* Placer l'icône de la lune à droite */
-  bottom: -3px;
+  bottom: -7px;
 }
 
 .slider:before {
@@ -101,6 +101,10 @@ body.light {
     color: #23242a;
     background: #eee;
   }
+  .slider {
+    border: 3px solid #ccc;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.6);
+  }
 }
 
 /* Styles pour le mode sombre */
@@ -128,6 +132,9 @@ body.dark {
   .i18n {
     color: #eee;
     background: #23242a;
+  }
+  .slider {
+    border: 3px solid #333;
   }
 }
 </style>
