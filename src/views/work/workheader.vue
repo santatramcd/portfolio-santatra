@@ -389,14 +389,17 @@ a {
   max-height: 38px;
   color: #fff;
 }
-a{
-  // color: #ccc!important;
-}
 a:hover {
   color: #fff;
 }
 .modal-header{
   border-bottom: 1px solid black;
+}
+.bi{
+  color: #ccc;
+}
+.bi:hover{
+  color: #fff;
 }
 @media (max-width: 470px) {
   .ul-list-proj {
