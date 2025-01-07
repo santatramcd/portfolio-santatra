@@ -23,7 +23,7 @@
               <div class="hover-div">
                 <span class="element"></span>
                 <div class="links">
-                <h3 class="title-card">{{ item.title }}</h3>
+                  <h3 class="title-card">{{ item.title }}</h3>
                   <span class="span-link">
                     <a :href="item.link" target="_blank">
                       <i class="bi bi-link-45deg"></i>
@@ -53,9 +53,13 @@
       ref="modal"
     >
       <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content" style="background: rgba(0, 0, 0, 0.6);">
+        <div class="modal-content" style="background: rgba(0, 0, 0, 0.6)">
           <div class="modal-header">
-            <h5 class="modal-title" style="text-transform: uppercase;" id="exampleModalLabel">
+            <h5
+              class="modal-title"
+              style="text-transform: uppercase"
+              id="exampleModalLabel"
+            >
               {{ selectedItem?.title || "Projet" }}
             </h5>
             <a
@@ -63,9 +67,10 @@
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-              style="color: #fff!important;"
+              style="color: #fff !important"
             >
-            <i class="bi bi-x-lg"></i></a>
+              <i class="bi bi-x-lg"></i
+            ></a>
           </div>
           <div class="modal-body overflow-body">
             <div
@@ -183,7 +188,7 @@ const data = [
     img: Lios,
     title: "lios collection",
     link: "https://lios-collection.mu/",
-    technology: "grav",
+    technology: "grav cms",
   },
 ];
 
@@ -206,7 +211,7 @@ const technologies = [
   "Vuejs 3",
   "React Js",
   "Application",
-  "grav",
+  "grav cms",
 ];
 const selectedItem = ref(null);
 
@@ -241,21 +246,29 @@ ul {
 }
 .ul-list-proj a {
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  padding: 10px 15px;
-  background-color: #45f3ff;
-  border-radius: 10px;
   cursor: pointer;
+  color: #fff;
+  background: linear-gradient(to bottom, #45f3ff, #266266);
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  padding: 12px 40px;
+  padding: 12px 18px 8px 18px;
+  border-radius: 4px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .ul-list-proj a:hover {
-  color: #fff;
-  background-color: #111;
+  // color: #fff;
+  background: #111;
 }
-.modal-title{
+.modal-title {
   color: rgba(255, 255, 255, 0.5);
-
 }
 a {
   text-decoration: none;
@@ -269,7 +282,6 @@ a {
   align-content: center;
   justify-content: center;
   border-radius: 10px;
-
 }
 .element::before {
   display: block;
@@ -310,9 +322,13 @@ a {
   transform: scale(0.8);
   transition: all 0.3s ease;
   border-radius: 10px;
-
 }
-
+.ul-list-proj {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    gap: 8px;
+  }
 .divcard {
   position: relative;
   transition: transform 0.3s ease; /* Ajout pour l'animation */
@@ -355,10 +371,10 @@ a {
   /* transform: translateY(30px); */
   transform: scale(0.8);
 }
-.overflow-body{
+.overflow-body {
   overflow-y: auto; /* Permet le défilement */
   scrollbar-width: thin; /* Réduit la largeur de la barre pour Firefox */
-  scrollbar-color:transparent transparent; /* Couleur de la barre et du fond pour Firefox */
+  scrollbar-color: transparent transparent; /* Couleur de la barre et du fond pour Firefox */
 }
 .div-scroll {
   max-height: 500px;
@@ -392,13 +408,13 @@ a {
 a:hover {
   color: #fff;
 }
-.modal-header{
+.modal-header {
   border-bottom: 1px solid black;
 }
-.bi{
+.bi {
   color: #ccc;
 }
-.bi:hover{
+.bi:hover {
   color: #fff;
 }
 @media (max-width: 470px) {

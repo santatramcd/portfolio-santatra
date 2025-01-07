@@ -141,13 +141,25 @@ i {
 }
 .a-down {
   text-decoration: none;
-  /* padding: 12px; */
-  background-color: #45f3ff;
-  color: black;
-  font-weight: 500;
-  padding: 5px 8px;
-  display: inline-block;
+  // background-color: #45f3ff;
+  // color: black;
+  // font-weight: 500;
+  // padding: 5px 8px;
+  // display: inline-block;
   cursor: pointer;
-  text-transform: capitalize;
+  // text-transform: capitalize;
+  color: #eee;
+  background: linear-gradient(to bottom, #27a776, #09442c);
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 </style>

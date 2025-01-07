@@ -197,6 +197,8 @@ const sendMail = () => {
   z-index: 100;
   margin-top: 2px;
   padding-top: 29px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .input {
@@ -239,13 +241,20 @@ const sendMail = () => {
 }
 
 .inptaj {
-  //  width: 30%;
-  padding: 0 5px;
-  color: #23242a;
-  border-radius: 8px;
   border: none;
-  background-color: #45f3ff;
-  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to bottom, #45f3ff, #266266);
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .div-icn-contact {
   padding: 15px;
