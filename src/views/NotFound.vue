@@ -103,7 +103,7 @@ body.light {
   }
   .slider {
     border: 3px solid #ccc;
-    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -135,6 +135,7 @@ body.dark {
   }
   .slider {
     border: 3px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
 }
 </style>
