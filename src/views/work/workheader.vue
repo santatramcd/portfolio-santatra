@@ -10,11 +10,7 @@
         </li>
       </ul>
       <transition-group name="list" tag="div" class="row div-scroll">
-        <div
-          class="col-md-4 mt-4"
-          v-for="item in filteredData"
-          :key="item.link"
-        >
+        <div class="col-md-4 mt-4" v-for="item in filteredData" :key="item.id">
           <div class="divcard">
             <div class="image">
               <img :src="item.img" :alt="item.title" />
@@ -69,8 +65,8 @@
               aria-label="Close"
               style="color: #fff !important"
             >
-              <i class="bi bi-x-lg"></i
-            ></a>
+              <i class="bi bi-x-lg"></i>
+            </a>
           </div>
           <div class="modal-body overflow-body">
             <div
@@ -103,102 +99,56 @@
 
 <script setup>
 import { ref, computed, onMounted } from "vue";
-// import { ref, computed } from "vue";
-import artiist from "../../assets/image/artiist.png";
-import maki from "../../assets/image/maki.png";
-import createak from "../../assets/image/createak.png";
-import robin from "../../assets/image/Capture.png";
-import projet from "../../assets/image/react.png";
-import vueprojet from "../../assets/image/projet.png";
-import Monsite from "../../assets/image/santatramichado.png";
-import Mda from "../../assets/image/mda.png";
-import Lios from "../../assets/image/lios-collection.png";
-import Kcal from "../../assets/image/calcul-kcal.png";
-import ReactJs from "../../assets/image/react-vercel.png";
-import eva from "../../assets/image/eva-car.png";
+import axios from "axios";
 
-const data = [
-  {
-    img: Monsite,
-    title: "Santatra Michado",
-    link: "https://santatra-michado.com",
-    technology: "WordPress",
-  },
-  {
-    img: Mda,
-    title: "Mada Digital Agency",
-    link: "https://mada-digital-agency.com",
-    technology: "WordPress",
-  },
-  {
-    img: artiist,
-    title: "artiist",
-    link: "https://www.artiist.fr/",
-    technology: "WordPress",
-  },
-  {
-    img: createak,
-    title: "Createak",
-    link: "https://createak.mu/",
-    technology: "WordPress",
-  },
-  {
-    img: robin,
-    title: "robinruth thailand",
-    link: "https://robinruth-thailand.com/",
-    technology: "WordPress",
-  },
-  {
-    img: maki,
-    title: "Maki car rental",
-    link: "https://maki-car-rental-mada.netlify.app/",
-    technology: "Vuejs 3",
-  },
-  {
-    img: eva,
-    title: "eva car rental",
-    link: "https://eva-car-rental.vercel.app/",
-    technology: "Vuejs 3",
-  },
-  {
-    img: vueprojet,
-    title: "pinkscrap2",
-    link: "https://pinkscrap2.netlify.app/",
-    technology: "Vuejs 3",
-  },
-  {
-    img: projet,
-    title: "Projet",
-    link: "https://projet-santatra.netlify.app/",
-    technology: "React Js",
-  },
-  {
-    img: ReactJs,
-    title: "Portfolio",
-    link: "https://projet-react-js-pi.vercel.app/",
-    technology: "React Js",
-  },
-  {
-    img: Kcal,
-    title: "Calculateur de calories",
-    link: "https://santatramcd.github.io/calculateur-de-calories/",
-    technology: "Application",
-  },
-  {
-    img: Lios,
-    title: "lios collection",
-    link: "https://lios-collection.mu/",
-    technology: "grav cms",
-  },
-];
+// Déclarez les données dynamiques
+const data = ref([]);
+
+// Charger les données depuis Airtable
+const baseID = "appTVkIAf30WtN760"; // Remplacez par votre ID de base
+const tableName = "Work"; // Remplacez par le nom de votre table
+const apiKey =
+  "patGxW0NlAoR2aJ7I.31bf9f568319b4dc29a7fce42c88ed697ead7a4746bcadb9ea8003fbb5c45502"; // Remplacez par votre clé API
+
+const airtableURL = `https://api.airtable.com/v0/${baseID}/${tableName}`;
+
+const fetchAirtableData = async () => {
+  try {
+    const response = await axios.get(airtableURL, {
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+      },
+    });
+    // Mettre à jour le tableau `data` avec les résultats d'Airtable
+    data.value = response.data.records.map((record) => ({
+      id: record.id,
+      title: record.fields.Name, // Ajustez selon vos colonnes Airtable
+      link: record.fields.Link, // Ajustez selon vos colonnes Airtable
+      img: record.fields.Photos ? record.fields.Photos[0].url : "", // Assurez-vous que le champ 'Photos' existe
+      technology: record.fields.Technology, // Ajustez selon vos colonnes Airtable
+    }));
+  } catch (error) {
+    console.error(
+      "Erreur lors de la récupération des données Airtable :",
+      error
+    );
+  }
+};
+
+// Chargement des données au montage du composant
+onMounted(() => {
+  fetchAirtableData();
+});
 
 const selectedTechnology = ref("Tous les projets");
 
 const filteredData = computed(() => {
   if (selectedTechnology.value === "Tous les projets") {
-    return data;
+    return data.value;
   }
-  return data.filter((item) => item.technology === selectedTechnology.value);
+  return data.value.filter(
+    (item) => item.technology === selectedTechnology.value
+  );
 });
 
 function filterProjects(technology) {
@@ -213,6 +163,7 @@ const technologies = [
   "Application",
   "grav cms",
 ];
+
 const selectedItem = ref(null);
 
 // Fonction pour ouvrir le modal et afficher les détails du projet sélectionné
@@ -222,13 +173,6 @@ function openModal(item) {
   const modal = new bootstrap.Modal(modalElement);
   modal.show();
 }
-
-onMounted(() => {
-  // Vérification de l'intégration Bootstrap
-  if (!window.bootstrap) {
-    console.error("Bootstrap JS n'est pas chargé !");
-  }
-});
 </script>
 
 <style lang="scss" scoped>
@@ -324,11 +268,11 @@ a {
   border-radius: 10px;
 }
 .ul-list-proj {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 0;
-    gap: 8px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0;
+  gap: 8px;
+}
 .divcard {
   position: relative;
   transition: transform 0.3s ease; /* Ajout pour l'animation */

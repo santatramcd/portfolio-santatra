@@ -46,19 +46,19 @@
               </ul>
             </div>
             <div class="col-6 col-lg-2 mb-3">
-              <h5>Technologies</h5>
+              <h5>Réalisé avec</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
                   <a href="#">Javascript</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#">React Js</a>
+                  <a href="#">Bootstrap 5</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#">Vue Js</a>
+                  <a href="#">Vue Js 3</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#">Php</a>
+                  <a href="#">Data Base Airtable</a>
                 </li>
               </ul>
             </div>
@@ -72,10 +72,16 @@
                   <a href="#">WordPress</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#">Laravel</a>
+                  <a href="#">Github/Git</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#">Github/Git</a>
+                  <a href="#">Javascript</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#">React Js / Angular</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#">Php / laravel</a>
                 </li>
               </ul>
             </div>
