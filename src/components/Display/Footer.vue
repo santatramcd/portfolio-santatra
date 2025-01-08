@@ -46,7 +46,7 @@
               </ul>
             </div>
             <div class="col-6 col-lg-2 mb-3">
-              <h5>Réalisé avec</h5>
+              <h5>{{ $t("realise") }}</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
                   <a href="#">Javascript</a>
@@ -63,7 +63,7 @@
               </ul>
             </div>
             <div class="col-6 col-lg-2 mb-3">
-              <h5>Autres</h5>
+              <h5>{{ $t("autre") }}</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
                   <a href="#">Html/css</a>
