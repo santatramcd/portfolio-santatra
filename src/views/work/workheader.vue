@@ -9,6 +9,17 @@
           </a>
         </li>
       </ul>
+
+      <!-- Afficher le spinner de chargement pendant le premier fetch -->
+      <div
+        v-if="isFirstLoad"
+        class="d-flex justify-content-center align-items-center mt-5"
+      >
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
       <transition-group name="list" tag="div" class="row div-scroll">
         <div class="col-md-4 mt-4" v-for="item in filteredData" :key="item.id">
           <div class="divcard">
@@ -103,6 +114,8 @@ import axios from "axios";
 
 // Déclarez les données dynamiques
 const data = ref([]);
+const loading = ref(false); // Indicateur de chargement
+const isFirstLoad = ref(true); // Indicateur de premier chargement
 
 // Charger les données depuis Airtable
 const baseID = "appTVkIAf30WtN760"; // Remplacez par votre ID de base
@@ -113,6 +126,7 @@ const apiKey =
 const airtableURL = `https://api.airtable.com/v0/${baseID}/${tableName}`;
 
 const fetchAirtableData = async () => {
+  loading.value = true; // Démarre le chargement
   try {
     const response = await axios.get(airtableURL, {
       headers: {
@@ -132,6 +146,9 @@ const fetchAirtableData = async () => {
       "Erreur lors de la récupération des données Airtable :",
       error
     );
+  } finally {
+    loading.value = false; // Arrête le chargement une fois que les données sont récupérées
+    isFirstLoad.value = false; // Arrêter d'afficher le spinner après le premier chargement
   }
 };
 
@@ -153,6 +170,7 @@ const filteredData = computed(() => {
 
 function filterProjects(technology) {
   selectedTechnology.value = technology;
+  fetchAirtableData(); // Recharge les données lorsque la technologie change
 }
 
 const technologies = [

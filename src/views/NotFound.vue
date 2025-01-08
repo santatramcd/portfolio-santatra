@@ -2,17 +2,17 @@
   <div>
     <h1 class="container">404 Erreur</h1>
     <!-- <h1>Données depuis Airtable</h1>
-    <ul>
-      <li v-for="record in records" :key="record.id">
-        {{ record.fields.Name }} - {{ record.fields.Description }}
-        <img
-          v-if="record.fields.Photos && record.fields.Photos[0]"
-          :src="record.fields.Photos[0].url"
-          :alt="'Image de ' + record.fields.Name"
-          width="200"
-        />
-      </li>
-    </ul> -->
+      <ul>
+        <li v-for="record in records" :key="record.id">
+          {{ record.fields.Name }} - {{ record.fields.Description }}
+          <img
+            v-if="record.fields.Photos && record.fields.Photos[0]"
+            :src="record.fields.Photos[0].url"
+            :alt="'Image de ' + record.fields.Name"
+            width="200"
+          />
+        </li>
+      </ul> -->
   </div>
 </template>
 
