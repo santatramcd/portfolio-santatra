@@ -51,7 +51,7 @@
 
 .slider i.bi-brightness-low-fill {
   left: 5px; /* Placer l'icône du soleil à gauche */
-  bottom: -5px;
+  bottom: -6px;
 }
 
 .slider i.bi-moon-stars-fill {
