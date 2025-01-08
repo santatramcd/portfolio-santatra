@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="container">404 Erreur</h1>
+    <div class="container">
+      <h1>404 Erreur</h1>
+    </div>
   </div>
 </template>
 
@@ -49,7 +51,7 @@
 
 .slider i.bi-brightness-low-fill {
   left: 5px; /* Placer l'icône du soleil à gauche */
-  bottom: -4px;
+  bottom: -5px;
 }
 
 .slider i.bi-moon-stars-fill {
