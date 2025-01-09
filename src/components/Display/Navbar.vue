@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg nav-bg">
       <div class="container-fluid container">
         <a class="nav-link navbar-brand logo-web" href="#" @click="home">SANTATRA®</a>
         <a class="nav-link navbar-brand logo-mobile" href="#" @click="home">SM®</a>

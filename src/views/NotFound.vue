@@ -99,6 +99,7 @@ body.light {
   .div-icn-contact {
     border: 1px solid #333;
   }
+  .nav-bg,
   .i18n {
     color: #23242a;
     background: #eee;
@@ -119,6 +120,7 @@ body.dark {
   .nav-link {
     color: #eee;
   }
+  .nav-bg,
   .divii {
     background-color: #28292d;
   }
