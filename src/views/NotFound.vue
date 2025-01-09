@@ -99,7 +99,14 @@ body.light {
   .div-icn-contact {
     border: 1px solid #333;
   }
-  .nav-bg,
+  .nav-bg {
+    background-color: rgba(255, 255, 255, 0.7); /* Blanc avec transparence */
+    backdrop-filter: blur(10px); /* Effet de flou */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilité pour WebKit */
+    border-radius: 8px; /* Facultatif : coins arrondis pour un meilleur design */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Facultatif : ombre pour le contraste */
+  }
+
   .i18n {
     color: #23242a;
     background: #eee;
@@ -120,7 +127,19 @@ body.dark {
   .nav-link {
     color: #eee;
   }
-  .nav-bg,
+  .nav-bg {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.6
+    ); /* Couleur de fond semi-transparente */
+    backdrop-filter: blur(10px); /* Ajout d'un effet de flou */
+    -webkit-backdrop-filter: blur(
+      10px
+    ); /* Compatibilité pour certains navigateurs */
+  }
+
   .divii {
     background-color: #28292d;
   }
