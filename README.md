@@ -1,2 +1,2 @@
 # portfolio-santatra
-<img align="right" src="https://media1.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" alt="GIF" />
+<img align="left" src="https://santatra-michado.com/wp-content/uploads/2024/10/banniere.jpg" alt="image" />
