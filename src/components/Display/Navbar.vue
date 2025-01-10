@@ -2,8 +2,12 @@
   <div>
     <nav class="navbar fixed-top navbar-expand-lg nav-bg">
       <div class="container-fluid container">
-        <a class="nav-link navbar-brand logo-web" href="#" @click="home">SANTATRA®</a>
-        <a class="nav-link navbar-brand logo-mobile" href="#" @click="home">SM®</a>
+        <a class="nav-link navbar-brand logo-web" href="#" @click="home"
+          >SANTATRA®</a
+        >
+        <a class="nav-link navbar-brand logo-mobile" href="#" @click="home"
+          >SM®</a
+        >
         <div class="logo-mobile">
           <label class="switch">
             <input
@@ -181,7 +185,7 @@ img {
 .langage {
   display: none;
 }
-.logo-mobile{
+.logo-mobile {
   display: none;
 }
 @media only screen and (max-width: 991px) {
@@ -189,14 +193,20 @@ img {
     // padding-left: 10px;
     text-align: center;
   }
-}
-@media only screen and (max-width: 380px) {
-  .langage {
-    display: flex;
-  }
   .div-langage {
     display: none;
   }
+  .langage {
+    display: flex;
+  }
+  .logo-web {
+    display: none;
+  }
+  .logo-mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 380px) {
   select {
     height: 25px;
   }
@@ -204,11 +214,5 @@ img {
     width: 31px;
     margin-top: 0px;
   }
-  .logo-web{
-  display: none;
-}
-.logo-mobile{
-  display: block;
-}
 }
 </style>
