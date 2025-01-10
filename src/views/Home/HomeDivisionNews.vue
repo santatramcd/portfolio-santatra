@@ -159,7 +159,7 @@ import Createak from "../../assets/image/createak.png";
 import App from "../../assets/image/calcul-kcal.png";
 import Artiist from "../../assets/image/artiist.png";
 import RobRuth from "../../assets/image/Capture.png";
-import Mda from "../../assets/image/mda.png";
+import Mcm from "../../assets/image/location-voiture.png";
 import Lio from "../../assets/image/lios-collection.png";
 import Eva from "../../assets/image/eva-car.png";
 
@@ -191,9 +191,9 @@ const galleryItems = [
     detailsLink: "https://robinruth-thailand.com/",
   },
   {
-    imgSrc: Mda,
-    title: "Mada Digital Agency",
-    detailsLink: "https://mada-digital-agency.com",
+    imgSrc: Mcm,
+    title: "Maki Car Mada",
+    detailsLink: "https://maki-car-rental-mada.netlify.app/",
   },
   {
     imgSrc: Lio,
