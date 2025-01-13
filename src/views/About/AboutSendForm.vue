@@ -223,4 +223,9 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+@media (max-width: 555px) {
+    button{
+        width: 100%;
+    }
+}
 </style>
