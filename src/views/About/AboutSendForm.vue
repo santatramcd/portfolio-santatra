@@ -30,7 +30,9 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="type" class="col-sm-2 col-form-label">Service :</label>
+              <label for="type" class="col-sm-2 col-form-label"
+                >Service :</label
+              >
               <div class="col-sm-10">
                 <input
                   type="text"
@@ -42,7 +44,9 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="budget" class="col-sm-2 col-form-label">Budget :</label>
+              <label for="budget" class="col-sm-2 col-form-label"
+                >Budget :</label
+              >
               <div class="col-sm-10">
                 <input
                   type="number"
@@ -185,21 +189,22 @@ input:focus {
 }
 
 button {
-  color: var(--default-color);
-  background: #27a776;
-  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(to bottom, #45f3ff, #266266);
+  font-weight: 500;
   font-size: 14px;
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 40px;
-  border: 0;
-  border-radius: 4px;
+  padding: 12px 40px;
+  padding: 12px 18px 8px 18px;
+  border: none;
   transition: 0.5s;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-button:hover {
-  background: #000000;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .div-btn-send {

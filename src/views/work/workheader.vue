@@ -216,7 +216,6 @@ ul {
   display: inline-block;
   padding: 12px 40px;
   padding: 12px 18px 8px 18px;
-  border-radius: 4px;
   transition: 0.5s;
   text-transform: uppercase;
   letter-spacing: 1px;
