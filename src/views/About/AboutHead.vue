@@ -10,7 +10,7 @@
           <div class="container">
             <div class="row gy-4 justify-content-center">
               <div class="col-lg-4 image-container-zoom" ref="imageContainer">
-                <img :src="Profil" class="img-fluid" ref="img"/>
+                <img :src="Profil" class="img-fluid" ref="img" />
                 <div class="zoom" ref="zoom"></div>
               </div>
               <div class="col-lg-6 content">
@@ -27,7 +27,12 @@
                       </li>
                       <li>
                         <i class="bi bi-chevron-right"></i>
-                        <strong>Website:</strong> <span><a href="https://santatra-michado.com/">santatra-michado.com</a></span>
+                        <strong>Website:</strong>
+                        <span
+                          ><a href="https://santatra-michado.com/"
+                            >santatra-michado.com</a
+                          ></span
+                        >
                       </li>
                       <li>
                         <i class="bi bi-chevron-right"></i>
@@ -51,7 +56,8 @@
                       </li>
                       <li>
                         <i class="bi bi-chevron-right"></i>
-                        <strong>Email:</strong> <span>Andrianjakasantatra22@gmail.com</span>
+                        <strong>Email:</strong>
+                        <span>Andrianjakasantatra22@gmail.com</span>
                       </li>
                       <li>
                         <i class="bi bi-chevron-right"></i>
@@ -63,6 +69,7 @@
                 <p class="py-3">
                   {{ $t("project") }}
                 </p>
+                <AboutSendForm />
               </div>
             </div>
           </div>
@@ -73,7 +80,7 @@
 </template>
 <script setup>
 import Profil from "../../assets/image/portrait.jpg";
-
+import AboutSendForm from "./AboutSendForm.vue";
 import { ref, onMounted } from "vue";
 
 const imageContainer = ref(null);
@@ -124,7 +131,7 @@ h1 {
 img {
   width: 100vw;
 }
-p{
+p {
   text-align: justify;
 }
 a {
@@ -174,7 +181,7 @@ section,
 .image-container-zoom {
   position: relative;
   width: 500px;
-  height: 500px;
+  height: 650px;
 }
 
 .image-container-zoom img {

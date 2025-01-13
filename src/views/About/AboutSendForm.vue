@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="container">
-      <div class="div-center">
-        <div class="col-lg-8">
+    <div>
+      <div>
+        <div>
           <form @submit.prevent="submitForm">
-            <h1>{{ $t("demande") }}</h1>
+            <h2>{{ $t("demande") }}</h2>
 
-            <div class="mb-3 row mt-5">
-              <label for="name" class="col-sm-2 col-form-label">Nom</label>
+            <div class="mb-3 row mt-2">
+              <label for="name" class="col-sm-2 col-form-label">Nom :</label>
               <div class="col-sm-10">
                 <input
                   type="text"
@@ -19,7 +19,7 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <label for="email" class="col-sm-2 col-form-label">Email :</label>
               <div class="col-sm-10">
                 <input
                   type="email"
@@ -30,7 +30,7 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="type" class="col-sm-2 col-form-label">Service</label>
+              <label for="type" class="col-sm-2 col-form-label">Service :</label>
               <div class="col-sm-10">
                 <input
                   type="text"
@@ -42,7 +42,7 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="budget" class="col-sm-2 col-form-label">Budget</label>
+              <label for="budget" class="col-sm-2 col-form-label">Budget :</label>
               <div class="col-sm-10">
                 <input
                   type="number"
@@ -55,7 +55,7 @@
             </div>
             <div class="mb-3 row">
               <label for="message" class="col-sm-2 col-form-label"
-                >Message</label
+                >Message :</label
               >
               <div class="col-sm-10">
                 <textarea
@@ -211,5 +211,11 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 </style>
