@@ -1,12 +1,14 @@
 <template>
   <div>
     <div class="container">
-      <h1>404 Erreur</h1>
+      <h1>404 Error</h1>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+</script>
+
 
 <style lang="scss">
 /* Style pour le switch */

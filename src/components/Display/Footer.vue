@@ -58,7 +58,10 @@
                   <a href="#">Vue Js 3</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#">Data Base Airtable</a>
+                  <a href="#">Vite</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#">Airtable</a>
                 </li>
               </ul>
             </div>
