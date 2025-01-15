@@ -31,7 +31,7 @@
             </div>
             <div class="mb-3 row">
               <label for="type" class="col-sm-2 col-form-label"
-                >Service :</label
+                >Type :</label
               >
               <div class="col-sm-10">
                 <input
@@ -224,8 +224,8 @@ h2 {
   margin-bottom: 30px;
 }
 @media (max-width: 555px) {
-    button{
-        width: 100%;
-    }
+  button {
+    width: 100%;
+  }
 }
 </style>
