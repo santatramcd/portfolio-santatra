@@ -224,8 +224,8 @@ h2 {
   margin-bottom: 30px;
 }
 @media (max-width: 555px) {
-  button {
-    width: 100%;
-  }
+    button{
+        width: 100%;
+    }
 }
 </style>
