@@ -21,20 +21,40 @@
             </span>
           </label>
         </div>
-        <div class="langage">
-          <div>
-            <span><img :src="$t('drapeau')" alt="drapeau" /></span>
-            <select class="i18n" v-model="$i18n.locale">
-              <option
-                v-for="locale in $i18n.availableLocales"
-                :key="`locale-${locale}`"
-                :value="locale"
+        <div class="div-lang-i18">
+          <ul class="langage">
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                {{ locale }}
-              </option>
-            </select>
-          </div>
+                <span>
+                  <img :src="$t('drapeau')" alt="drapeau" class="drapeau" />
+                </span>
+                {{ $i18n.locale.toUpperCase() }}
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li
+                  v-for="locale in $i18n.availableLocales"
+                  :key="`locale-${locale}`"
+                >
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    @click.prevent="$i18n.locale = locale"
+                  >
+                    {{ locale.toUpperCase() }}
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+
         <button
           class="navbar-toggler i-dark"
           type="button"
@@ -53,21 +73,36 @@
             <a class="nav-link" href="#" @click="about">{{ $t("Resume") }}</a>
             <a class="nav-link" href="#" @click="work">Portfolio</a>
             <a class="nav-link" href="#" @click="contact">Contact</a>
-            <a class="nav-link" href="#">
-              <div class="div-langage">
-                <div>
-                  <span><img :src="$t('drapeau')" alt="drapeau" /></span>
-                  <select v-model="$i18n.locale" class="i18n">
-                    <option
-                      v-for="locale in $i18n.availableLocales"
-                      :key="`locale-${locale}`"
-                      :value="locale"
+            <a class="nav-link div-langage" href="#">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>
+                    <img :src="$t('drapeau')" alt="drapeau" class="drapeau" />
+                  </span>
+                  {{ $i18n.locale.toUpperCase() }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li
+                    v-for="locale in $i18n.availableLocales"
+                    :key="`locale-${locale}`"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      @click.prevent="$i18n.locale = locale"
                     >
-                      {{ locale }}
-                    </option>
-                  </select>
-                </div>
-              </div>
+                      {{ locale.toUpperCase() }}
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </a>
             <a class="nav-link logo-web" href="#">
               <label class="switch">
@@ -175,7 +210,12 @@ i {
 }
 img {
   width: 25px;
-  margin-top: 2px;
+  margin-top: -3px;
+}
+.dropdown-toggle {
+  font-size: 18px;
+  margin-top: -3px;
+  text-shadow: none;
 }
 .div-langage {
   display: flex;
@@ -184,9 +224,23 @@ img {
 }
 .langage {
   display: none;
+  padding: 0;
+}
+.langage li{
+  list-style: none;
 }
 .logo-mobile {
   display: none;
+}
+.dropdown-item {
+  color: #000000;
+}
+.div-lang-i18 {
+  display: flex;
+  height: 35px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  align-content: center;
 }
 @media only screen and (max-width: 991px) {
   .nav-link {
@@ -212,7 +266,6 @@ img {
   }
   img {
     width: 31px;
-    margin-top: 0px;
   }
 }
 </style>
