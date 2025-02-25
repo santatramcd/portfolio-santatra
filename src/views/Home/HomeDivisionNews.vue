@@ -153,55 +153,45 @@
 <script setup>
 import { ref } from "vue";
 
-// Import des images
-import SM from "../../assets/image/santatramichado.png";
-import Createak from "../../assets/image/createak.png";
-import App from "../../assets/image/calcul-kcal.png";
-import Artiist from "../../assets/image/artiist.png";
-import RobRuth from "../../assets/image/Capture.png";
-import Mcm from "../../assets/image/location-voiture.png";
-import Lio from "../../assets/image/lios-collection.png";
-import Eva from "../../assets/image/eva-car.png";
-
 // Définition des éléments de la galerie
 const galleryItems = [
   {
-    imgSrc: SM,
+    imgSrc: "https://res.cloudinary.com/de03l56z6/image/upload/v1740467982/santatra-michado.com__1_rdo0sz.png",
     title: "Santatra Michado",
     detailsLink: "https://santatra-michado.com",
   },
   {
-    imgSrc: Createak,
+    imgSrc: "https://res.cloudinary.com/de03l56z6/image/upload/v1740469759/createak_1_1_1_g3aacd.png",
     title: "Createak",
     detailsLink: "https://createak.mu/",
   },
   {
-    imgSrc: App,
+    imgSrc: "https://res.cloudinary.com/de03l56z6/image/upload/v1740470447/santatramcd.github.io_calculateur-de-calories__jnt5ww.png",
     title: "Calculateur de Calories",
     detailsLink: "https://santatramcd.github.io/calculateur-de-calories/",
   },
   {
-    imgSrc: Artiist,
+    imgSrc: "https://res.cloudinary.com/de03l56z6/image/upload/v1740469597/artiist_1_ik88vl.png",
     title: "Artiist",
     detailsLink: "https://www.artiist.fr/",
   },
   {
-    imgSrc: RobRuth,
+    imgSrc: "https://res.cloudinary.com/de03l56z6/image/upload/v1740469835/robinruth-thailand.com__1_pfnfva.png",
     title: "RobinRuth Thailand",
     detailsLink: "https://robinruth-thailand.com/",
   },
   {
-    imgSrc: Mcm,
+    imgSrc: "https://res.cloudinary.com/de03l56z6/image/upload/v1740469989/location-voiture_1_rirnwm.png",
     title: "Maki Car Mada",
     detailsLink: "https://maki-car-rental-mada.netlify.app/",
   },
   {
-    imgSrc: Lio,
+    imgSrc: "https://res.cloudinary.com/de03l56z6/image/upload/v1740470456/lios-collection.mu__1_jqdeox.png",
     title: "Lios Collection",
     detailsLink: "https://lios-collection.mu/",
   },
   {
-    imgSrc: Eva,
+    imgSrc: "https://res.cloudinary.com/de03l56z6/image/upload/v1740470026/eva-car-rental.vercel.app__1_iz85wb.png",
     title: "Eva Car Rental",
     detailsLink: "https://eva-car-rental.vercel.app/",
   },

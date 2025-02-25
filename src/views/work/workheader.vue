@@ -24,7 +24,7 @@
         <div class="col-md-4 mt-4" v-for="item in filteredData" :key="item.id">
           <div class="divcard">
             <div class="image">
-              <img :src="item.img" :alt="item.title" />
+              <img :src="item.urlimg" :alt="item.title" />
             </div>
             <div class="colorname">
               <div class="hover-div">
@@ -87,14 +87,14 @@
             >
               <div class="carousel-inner">
                 <div
-                  v-for="(img, index) in selectedItem?.images || [
-                    selectedItem?.img,
+                  v-for="(urlimg, index) in selectedItem?.images || [
+                    selectedItem?.urlimg,
                   ]"
                   :key="index"
                   :class="['carousel-item', { active: index === 0 }]"
                 >
                   <img
-                    :src="img"
+                    :src="urlimg"
                     class="d-block w-100"
                     :alt="selectedItem?.title"
                   />
@@ -138,7 +138,8 @@ const fetchAirtableData = async () => {
       id: record.id,
       title: record.fields.Name, // Ajustez selon vos colonnes Airtable
       link: record.fields.Link, // Ajustez selon vos colonnes Airtable
-      img: record.fields.Photos ? record.fields.Photos[0].url : "", // Assurez-vous que le champ 'Photos' existe
+      urlimg: record.fields.url, // Ajustez selon vos colonnes Airtable
+      // img: record.fields.Photos ? record.fields.Photos[0].url : "",
       technology: record.fields.Technology, // Ajustez selon vos colonnes Airtable
     }));
   } catch (error) {
